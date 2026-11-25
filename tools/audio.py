@@ -39,6 +39,15 @@ def check(path, expected):
     return ok
 
 
+def sane_length(path, text):
+    """Free-voice self-check (no API needed): speech speed must look human.
+    Catches clips that are cut short, stuck in long silence, or babbling."""
+    cps = len(text) / max(wav_len(path), 0.1)
+    ok = 4 <= cps <= 22
+    print(f"  check {os.path.basename(path)}: {'ok' if ok else 'BAD'} ({cps:.1f} letters/s)")
+    return ok
+
+
 def wav_len(p):
     with wave.open(p) as w:
         return w.getnframes() / w.getframerate()
@@ -49,7 +58,17 @@ def main(name, o_check=False):
     shots = json.load(open(os.path.join(proj, "4-storyboard.json")))["shots"]
     chars = json.load(open(os.path.join(proj, "3-characters.json")))
     voice = {c["name"]: c["voice"] for c in chars["characters"]}
-    voice["Narrator"] = chars["narrator_voice"]
+    byname = {c["name"]: c for c in chars["characters"]}
+    voice["Narrator"] = voice.get(chars["narrator_voice"], chars["narrator_voice"])
+    if chars["narrator_voice"] in byname: byname["Narrator"] = byname[chars["narrator_voice"]]
+
+    def make(line, out, retry=0):
+        c = byname.get(line["speaker"], {})
+        if c.get("voice") == "parler":   # free local voice model (AI4Bharat)
+            import voice_parler
+            voice_parler.speak(line["text"], c["voice_desc"], out, seed=c.get("seed", 7) + retry * 1000)
+        else:                            # Google Gemini voice; Hindi text only (style notes get read aloud)
+            g.speech(line["text"], voice[line["speaker"]], out)
     adir = os.path.join(proj, "audio", "lines")
     os.makedirs(adir, exist_ok=True)
 
@@ -60,14 +79,14 @@ def main(name, o_check=False):
         shot = {"id": s["id"], "start": t, "lines": []}
         for i, line in enumerate(s["lines"]):
             out = os.path.join(adir, f"{s['id']}-{i}.wav")
-            if os.path.exists(out) and o_check:
+            parler = byname.get(line["speaker"], {}).get("voice") == "parler"
+            if os.path.exists(out) and o_check and not parler:
                 if not check(out, line["text"]):
                     os.remove(out)
             if not os.path.exists(out):
                 for attempt in range(5):
                     try:
-                        # Hindi text only: voice models were found reading English style notes aloud
-                        g.speech(line["text"], voice[line["speaker"]], out)
+                        make(line, out)
                         break
                     except RuntimeError as e:
                         if attempt == 4:
@@ -75,11 +94,12 @@ def main(name, o_check=False):
                         wait = 40 if "429" in str(e) else 5
                         print(f"  retry in {wait}s: {str(e)[:60]}"); time.sleep(wait)
                 trim(out)
-                if not check(out, line["text"]):   # one more try, then stop and report
+                good = (lambda: sane_length(out, line["text"])) if parler else (lambda: check(out, line["text"]))
+                if not good():   # one more try, then stop and report
                     os.remove(out)
-                    g.speech(line["text"], voice[line["speaker"]], out)
+                    make(line, out, retry=1)
                     trim(out)
-                    if not check(out, line["text"]):
+                    if not good():
                         raise SystemExit(f"Voice for {out} is still wrong after a retry - please listen and decide.")
                 print("voice", out[-12:], flush=True)
             d = wav_len(out)

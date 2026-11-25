@@ -1,0 +1,773 @@
+{
+  "shots": [
+    {
+      "id": "s01",
+      "scene": 1,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "अरे, अरे! यह शोर कैसा है? परी, मोनू, तुम दोनों फिर से लड़ रहे हो?"
+        },
+        {
+          "speaker": "Monu",
+          "text": "दादी, कल गणपति बप्पा आएँगे। मंडप मैं सजाऊँगा! पर परी दीदी मुझे कुछ करने ही नहीं देती।"
+        },
+        {
+          "speaker": "Pari",
+          "text": "नहीं दादी, मोनू सब गड़बड़ कर देता है। फूल उल्टे लगाता है, और उसने झालर भी तोड़ दी!"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "scene": 1,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Monu",
+          "text": "तो तुम ही सजा लो! मैं तो अब तुमसे बात ही नहीं करूँगा।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "अच्छा, अच्छा। दोनों इधर आओ, मेरे पास बैठो। आज मैं तुम्हें गणेश जी की एक ऐसी कहानी सुनाती हूँ, जो तुमने पहले कभी नहीं सुनी।"
+        },
+        {
+          "speaker": "Pari",
+          "text": "नई कहानी? सच में दादी?"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "scene": 1,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "हाँ बेटा। कहानी का नाम है, गणेश जी और टूटा पुल।"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "scene": 2,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "बहुत समय पहले, एक बड़ी नदी के दो किनारों पर दो गाँव थे। एक तरफ़ रामपुर, और दूसरी तरफ़ श्यामपुर।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "दोनों गाँवों को एक पुराना लकड़ी का पुल जोड़ता था। रामपुर के कुम्हार गणेश जी की सबसे सुंदर मूर्ति बनाते थे, और श्यामपुर में पहाड़ी पर गणेश जी का मंदिर था।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "हर साल दोनों गाँव मिलकर गणेश चतुर्थी मनाते थे। ढोल बजते, मोदक बनते, और सब मिलकर नाचते।"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "scene": 2,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Monu",
+          "text": "फिर तो बहुत मज़ा आता होगा!"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "scene": 2,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "आता था, बेटा। पर फिर एक दिन, एक छोटी सी बात पर झगड़ा हो गया।"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "scene": 3,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "नदी के किनारे एक बड़ा आम का पेड़ था। रामपुर वाले कहते, पेड़ हमारा है। श्यामपुर वाले कहते, नहीं, पेड़ हमारा है।"
+        },
+        {
+          "speaker": "Ramdin",
+          "text": "ये आम हमारे हैं! इस पेड़ की जड़ें हमारी तरफ़ हैं।"
+        },
+        {
+          "speaker": "Shyamlal",
+          "text": "और इसकी डालियाँ हमारी तरफ़ झुकी हैं! आम तो हमारे ही हैं!"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "scene": 3,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "बड़ों का झगड़ा इतना बढ़ा कि दोनों गाँवों ने बात करना ही बंद कर दिया। और बड़ों को देखकर बच्चे भी एक-दूसरे से रूठ गए।"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "scene": 3,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Pari",
+          "text": "बस एक आम के पेड़ के लिए?"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "scene": 3,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "हाँ बेटा। झगड़े अक्सर छोटी-छोटी बातों से ही शुरू होते हैं।"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "scene": 4,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "फिर बरसात आई। ऐसी बारिश, जैसी पहले कभी नहीं हुई थी। बादल गरजे, बिजली चमकी, और नदी उफान पर आ गई।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "उस रात तेज़ पानी के बहाव में वह पुराना पुल टूट गया। धड़ाम! आधा पुल पानी में बह गया।"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "scene": 4,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Monu",
+          "text": "अरे बाप रे! फिर गणेश चतुर्थी का क्या हुआ?"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "scene": 4,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "वही तो मुश्किल थी। चतुर्थी में बस तीन दिन बाकी थे। मूर्ति रामपुर में थी, और मंदिर श्यामपुर में।"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "scene": 5,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Ramdin",
+          "text": "यह सब श्यामपुर वालों की वजह से हुआ! उन्होंने कभी पुल की मरम्मत नहीं की।"
+        },
+        {
+          "speaker": "Shyamlal",
+          "text": "हम क्यों करें? पुल तो तुम्हारी तरफ़ से कमज़ोर था!"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "दोनों किनारों पर लोग खड़े होकर बस एक-दूसरे को दोष देते रहे। पर पुल बनाने कोई आगे नहीं आया।"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "scene": 5,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "रामपुर में एक नटखट लड़का था, गोलू। और श्यामपुर में एक समझदार लड़की थी, मीना। दोनों उदास होकर टूटे पुल को देख रहे थे।"
+        },
+        {
+          "speaker": "Golu",
+          "text": "इस बार बप्पा की मूर्ति मंदिर तक कैसे जाएगी?"
+        },
+        {
+          "speaker": "Meena",
+          "text": "शायद इस बार गणेश चतुर्थी होगी ही नहीं।"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "scene": 6,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "तभी नदी किनारे एक बूढ़े बाबा आए। उनका पेट गोल-मटोल था, आँखें बहुत प्यारी थीं, सिर पर पीली पगड़ी थी, और कंधे पर एक छोटा सा भूरा चूहा बैठा था।"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "scene": 6,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Monu",
+          "text": "चूहा? दादी, कहीं वो बाबा..."
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "scene": 6,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "श्श्श! आगे सुनो।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "बाबा चुपचाप बैठ गए, और बाँस की डंडियों को रस्सी से बाँधने लगे। साथ में धीरे-धीरे गुनगुना भी रहे थे।"
+        },
+        {
+          "speaker": "Golu",
+          "text": "बाबा, आप क्या कर रहे हैं?"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "scene": 6,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Baba",
+          "text": "पुल बना रहा हूँ, बेटा।"
+        },
+        {
+          "speaker": "Golu",
+          "text": "अकेले? इतना बड़ा पुल? यह तो कभी नहीं बनेगा!"
+        },
+        {
+          "speaker": "Baba",
+          "text": "अकेला कहाँ हूँ? तुम भी तो हो। आओ, यह रस्सी पकड़ो।"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "scene": 7,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "गोलू ने रस्सी पकड़ ली। उसे देखकर रामपुर के और बच्चे भी आ गए। कोई बाँस लाया, कोई रस्सी।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "उधर, नदी के दूसरे किनारे पर मीना ने देखा कि रामपुर के बच्चे पुल बना रहे हैं।"
+        },
+        {
+          "speaker": "Meena",
+          "text": "अगर वो उस तरफ़ से बना रहे हैं, तो हमें भी इस तरफ़ से बनाना होगा! चलो सब!"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "scene": 7,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "और श्यामपुर के बच्चे भी काम में जुट गए। पर अभी भी दोनों तरफ़ के बच्चे एक-दूसरे से बात नहीं कर रहे थे।"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "scene": 8,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "दो दिन में दोनों किनारों से पुल आधा-आधा बन गया। पर बीच में एक बड़ी मुश्किल थी।"
+        },
+        {
+          "speaker": "Baba",
+          "text": "पुल के बीच में एक बहुत भारी लट्ठा रखना होगा। उसके बिना दोनों हिस्से नहीं जुड़ेंगे।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "गोलू और उसके दोस्तों ने रस्सी से लट्ठा खींचा। पूरी ताक़त लगाई, पर लट्ठा हिला तक नहीं।"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "scene": 8,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Golu",
+          "text": "यह बहुत भारी है! हम अकेले नहीं खींच सकते।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "उधर मीना के दोस्तों ने भी कोशिश की, पर वो भी हार गए।"
+        },
+        {
+          "speaker": "Meena",
+          "text": "रामपुर वालों से कहो, वो ठीक से खींचें!"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "scene": 8,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Golu",
+          "text": "तुम लोग ठीक से खींचो! गलती तुम्हारी है!"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "फिर वही झगड़ा। और झगड़े में रस्सी फिसल गई, और लट्ठा वापस कीचड़ में जा गिरा।"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "scene": 9,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "तब बाबा के कंधे से वह छोटा चूहा कूदा। वह रस्सी पर दौड़ता हुआ, नदी के ऊपर से, सीधा मीना के पास पहुँच गया।"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "scene": 9,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Pari",
+          "text": "रस्सी पर? नदी के ऊपर?"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "scene": 9,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "हाँ! और उसके मुँह में एक छोटा सा मोदक था। उसने मोदक मीना के हाथ पर रखा, और चूँ-चूँ करके रस्सी की तरफ़ इशारा किया।"
+        },
+        {
+          "speaker": "Baba",
+          "text": "बच्चों, एक तरफ़ से खींचोगे, तो लट्ठा नहीं हिलेगा। दोनों तरफ़ से एक साथ खींचो। गिनती भी साथ बोलो।"
+        },
+        {
+          "speaker": "Meena",
+          "text": "गोलू! हम गिनेंगे, तुम भी साथ गिनना!"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "scene": 9,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Golu",
+          "text": "ठीक है मीना! एक..."
+        },
+        {
+          "speaker": "Meena",
+          "text": "दो..."
+        },
+        {
+          "speaker": "Golu",
+          "text": "तीन... गणपति बप्पा..."
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "scene": 9,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Meena",
+          "text": "मोरया!"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "और जैसे ही सबने एक साथ खींचा, वह भारी लट्ठा ऊपर उठा और धीरे से पुल के बीच में जाकर बैठ गया!"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "scene": 9,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Monu",
+          "text": "वाह! पुल बन गया!"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "scene": 10,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "उस रात, चाँदनी में, रामपुर और श्यामपुर के बच्चे पहली बार पुल के बीच में एक साथ बैठे।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "बाबा ने अपनी पोटली खोली और सबको मोदक बाँटे। और पता है सबसे मज़ेदार बात क्या थी? पोटली कभी ख़ाली ही नहीं होती थी!"
+        },
+        {
+          "speaker": "Golu",
+          "text": "मीना, माफ़ करना। मैंने बेकार में तुम पर गुस्सा किया।"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "scene": 10,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Meena",
+          "text": "मुझे भी माफ़ करना, गोलू। अब से हम दोस्त हैं।"
+        },
+        {
+          "speaker": "Baba",
+          "text": "देखा बच्चों? पुल लकड़ी से नहीं, दिलों से बनता है। जब दिल जुड़ जाते हैं, तो कोई नदी बड़ी नहीं लगती।"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "scene": 11,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "अगली सुबह गणेश चतुर्थी थी। रामपुर के बड़े लोग जागे, तो देखा, नदी पर नया पुल बना है।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "और उस पुल पर दोनों गाँवों के बच्चे मिलकर गणेश जी की मूर्ति ले जा रहे थे। ढोल बज रहे थे, फूल बरस रहे थे।"
+        },
+        {
+          "speaker": "Ramdin",
+          "text": "यह पुल... बच्चों ने बनाया? और हम बड़े तो बस लड़ते ही रहे।"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "scene": 11,
+      "location": "river",
+      "set": "river",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Shyamlal",
+          "text": "रामदीन भाई, मुझे माफ़ कर दो। आम का पेड़ दोनों गाँवों का है।"
+        },
+        {
+          "speaker": "Ramdin",
+          "text": "नहीं श्यामलाल भाई, माफ़ी तो मुझे माँगनी चाहिए। आज से हम फिर एक हैं।"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "और दोनों गले मिल गए। सारे गाँव ने एक साथ जयकारा लगाया।"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "scene": 12,
+      "location": "temple",
+      "set": "temple",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "मंदिर में मूर्ति रखी गई। तभी गोलू ने चारों तरफ़ देखा।"
+        },
+        {
+          "speaker": "Golu",
+          "text": "अरे, बाबा कहाँ गए? हमने तो उन्हें धन्यवाद भी नहीं कहा!"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "बाबा कहीं नहीं थे। पर मीना ने देखा, मूर्ति के पैरों के पास एक छोटा सा भूरा चूहा बैठा था, और उसके पास एक मोदक रखा था।"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "scene": 12,
+      "location": "temple",
+      "set": "temple",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Meena",
+          "text": "गोलू, देखो! यह तो वही चूहा है! और गणपति बप्पा... मुस्कुरा रहे हैं!"
+        },
+        {
+          "speaker": "Golu",
+          "text": "मतलब... वो बाबा... ख़ुद गणेश जी थे!"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "हाँ बच्चों। विघ्नहर्ता गणेश जी ख़ुद आए थे। पुल बनाने नहीं, बल्कि दिलों को जोड़ने।"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "scene": 13,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Pari",
+          "text": "दादी, कितनी सुंदर कहानी थी!"
+        },
+        {
+          "speaker": "Monu",
+          "text": "पर दादी, गणेश जी ने पुल ख़ुद क्यों नहीं बना दिया? वो तो भगवान हैं!"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "क्योंकि मोनू, अगर वो ख़ुद बना देते, तो बच्चे कभी साथ मिलकर काम करना नहीं सीखते। गणेश जी हमारी मुश्किलें दूर करते हैं, पर साथ चलना हमें ख़ुद सीखना होता है।"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "scene": 13,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Monu",
+          "text": "दीदी, माफ़ करना। चलो, मंडप हम दोनों मिलकर सजाते हैं।"
+        },
+        {
+          "speaker": "Pari",
+          "text": "हाँ मोनू! तुम फूल लगाना, मैं झालर लगाऊँगी। मिलकर सबसे सुंदर मंडप बनाएँगे!"
+        },
+        {
+          "speaker": "Dadi",
+          "text": "शाबाश मेरे बच्चों! यही तो इस कहानी की सीख है।"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "scene": 14,
+      "location": "courtyard",
+      "set": "courtyard",
+      "characters": [],
+      "visual": "",
+      "camera": "auto",
+      "lines": [
+        {
+          "speaker": "Dadi",
+          "text": "मिलकर काम करें, तो हर बाधा दूर हो जाती है। और जहाँ प्यार और एकता होती है, वहाँ गणपति बप्पा ख़ुद आते हैं।"
+        },
+        {
+          "speaker": "Pari",
+          "text": "गणपति बप्पा..."
+        },
+        {
+          "speaker": "Monu",
+          "text": "मोरया!"
+        }
+      ]
+    }
+  ]
+}

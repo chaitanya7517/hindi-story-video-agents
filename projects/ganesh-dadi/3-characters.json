@@ -1,0 +1,90 @@
+{
+  "style": "Warm 2D storybook cartoon of an Indian village, soft shading, rounded friendly characters, rich festival colours; Ganesh ji always shown with devotion and respect.",
+  "characters": [
+    {
+      "name": "Dadi",
+      "hindi_name": "दादी",
+      "look": "70-year-old grandmother, white hair in a bun, round gold glasses, cream saree with maroon border, small red bindi, gentle smile",
+      "voice": "parler",
+      "voice_desc": "Rani speaks slowly in a warm, gentle and loving voice like an old grandmother telling a bedtime story. The recording is very clear and close-up, with no background noise.",
+      "seed": 11
+    },
+    {
+      "name": "Pari",
+      "hindi_name": "परी",
+      "look": "9-year-old girl, short bob hair with a pink clip, pink frock with green border",
+      "voice": "parler",
+      "voice_desc": "A young girl speaks with a high-pitched, sweet and excited voice at a moderate pace. The recording is very clear and close-up, with no background noise.",
+      "seed": 21
+    },
+    {
+      "name": "Monu",
+      "hindi_name": "मोनू",
+      "look": "6-year-old boy, short messy hair, sky-blue kurta and white pyjama",
+      "voice": "parler",
+      "voice_desc": "A young boy speaks with a high-pitched, playful and excited voice at a fast pace. The recording is very clear and close-up, with no background noise.",
+      "seed": 31
+    },
+    {
+      "name": "Golu",
+      "hindi_name": "गोलू",
+      "look": "10-year-old chubby boy from Rampur, spiky hair, orange vest and khaki shorts",
+      "voice": "parler",
+      "voice_desc": "A young boy speaks with a high-pitched, energetic and cheeky voice at a moderate pace. The recording is very clear and close-up, with no background noise.",
+      "seed": 41
+    },
+    {
+      "name": "Meena",
+      "hindi_name": "मीना",
+      "look": "10-year-old girl from Shyampur, long single plait, green ghagra and yellow choli",
+      "voice": "parler",
+      "voice_desc": "A young girl speaks with a high-pitched, clear and confident voice at a moderate pace. The recording is very clear and close-up, with no background noise.",
+      "seed": 51
+    },
+    {
+      "name": "Baba",
+      "hindi_name": "बाबा",
+      "look": "kind old man with a big round belly, big ears, gentle eyes, red tilak, yellow turban, saffron shawl, cream dhoti, cloth bag of modaks, small brown mouse on his shoulder (Ganesh ji in disguise)",
+      "voice": "parler",
+      "voice_desc": "Rohit speaks slowly in a deep, calm, kind and soothing voice. The recording is very clear and close-up, with no background noise.",
+      "seed": 61
+    },
+    {
+      "name": "Ramdin",
+      "hindi_name": "रामदीन",
+      "look": "Rampur headman, big curled moustache, red turban, white kurta, brown waistcoat, wooden stick",
+      "voice": "parler",
+      "voice_desc": "Aman speaks loudly and quickly in an angry, gruff voice. The recording is very clear and close-up, with no background noise.",
+      "seed": 71
+    },
+    {
+      "name": "Shyamlal",
+      "hindi_name": "श्यामलाल",
+      "look": "Shyampur headman, thin, grey beard, green turban, white kurta and dhoti",
+      "voice": "parler",
+      "voice_desc": "A middle-aged man speaks loudly in an irritated, sharp voice at a fast pace. The recording is very clear and close-up, with no background noise.",
+      "seed": 81
+    },
+    {
+      "name": "Mooshak",
+      "hindi_name": "मूषक",
+      "look": "small brown mouse with pink ears and a long tail, carries a modak",
+      "voice": "none"
+    }
+  ],
+  "locations": [
+    {
+      "id": "courtyard",
+      "look": "Dadi's village home courtyard with a charpai, tulsi planter, a festival mandap being decorated with marigold garlands"
+    },
+    {
+      "id": "river",
+      "look": "a wide river with Rampur on the left bank and Shyampur on the right bank, an old wooden bridge, a mango tree on the left bank, a Ganesh temple on a hill on the right"
+    },
+    {
+      "id": "temple",
+      "look": "small hilltop Ganesh temple with bells, flowers and a beautiful Ganesh murti"
+    }
+  ],
+  "narrator_voice": "Dadi"
+}
