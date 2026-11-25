@@ -1,0 +1,177 @@
+{
+  "shots": [
+    {
+      "id": "s01",
+      "scene": 1,
+      "location": "pottery_shop",
+      "characters": [
+        "Mithi",
+        "Papa"
+      ],
+      "visual": "In a cozy rustic pottery shop, Papa sits tiredly at a stone potter's wheel surrounded by terracotta pots, looking exhausted with clay on his clothes. Next to him, young Mithi in a mustard-yellow kurti watches him with concern.",
+      "camera": "zoom_in",
+      "lines": [
+        {
+          "speaker": "Narrator",
+          "text": "क्या आपने कभी अपने हाथों से मिट्टी का दीया बनाया है? एक छोटे से गाँव में मिठी नाम की बच्ची अपने पापा के साथ रहती थी।"
+        },
+        {
+          "speaker": "Narrator",
+          "text": "त्योहार आने वाला था और उसके पापा दिन-रात मिट्टी के दीये बना रहे थे। पापा बहुत थक गए थे।"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "scene": 1,
+      "location": "pottery_shop",
+      "characters": [
+        "Mithi",
+        "Papa"
+      ],
+      "visual": "Mithi steps closer to Papa with a determined smile, pointing toward the clay. Papa smiles back lovingly at her, gently patting her hand to rest.",
+      "camera": "pan_right",
+      "lines": [
+        {
+          "speaker": "Mithi",
+          "text": "पापा, आप बहुत थक गए हैं। आज मैं भी आपके साथ दीये बनाऊँगी!"
+        },
+        {
+          "speaker": "Papa",
+          "text": "अरे मेरी नन्हीं मिठी! तुम तो बहुत छोटी हो। तुम आराम करो बेटा।"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "scene": 2,
+      "location": "house_courtyard",
+      "characters": [
+        "Mithi"
+      ],
+      "visual": "In the cozy during twilight, Mithi sits quietly on the terracotta floor with a small mound of grey clay, carefully shaping a tiny pot with her small hands with focused joy.",
+      "camera": "zoom_in",
+      "lines": [
+        {
+          "speaker": "Narrator",
+          "text": "पापा के सोने के बाद, मिठी चुपके से उठी। उसने थोड़ी सी मिट्टी ली और अपने नन्हें हाथों से एक छोटा सा दीया बनाया।"
+        },
+        {
+          "speaker": "Narrator",
+          "text": "दीया थोड़ा सा टेढ़ा बना था, लेकिन मिठी ने उसे अपने पूरे दिल और प्यार से बनाया था।"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "scene": 2,
+      "location": "house_courtyard",
+      "characters": [
+        "Mithi"
+      ],
+      "visual": "Mithi sits in holding a slightly crooked homemade clay diya in both palms, smiling warmly with dark brown eyes shining in soft moonlight.",
+      "camera": "zoom_out",
+      "lines": [
+        {
+          "speaker": "Mithi",
+          "text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "scene": 3,
+      "location": "house_courtyard",
+      "characters": [
+        "Uluka"
+      ],
+      "visual": "At night in, Uluka, a snowy white owl with glowing amber eyes and faint golden specks, swoops down softly and perches on a wooden beam above the small clay diya left on a stool.",
+      "camera": "pan_left",
+      "lines": [
+        {
+          "speaker": "Narrator",
+          "text": "उसी रात, आसमान से उलूका नाम का एक सफ़ेद उल्लू उड़ा। उलूका सच्चे दिल वाले बच्चों से मिलने आता था।"
+        },
+        {
+          "speaker": "Narrator",
+          "text": "उलूका ने मिठी का बनाया टेढ़ा दीया देखा और मुस्कुराया।"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "scene": 3,
+      "location": "house_courtyard",
+      "characters": [
+        "Uluka"
+      ],
+      "visual": "Close-up of Uluka, the magical white barn owl, looking down lovingly at the tiny handmade diya, its glowing amber eyes sparkling in the magical night air.",
+      "camera": "zoom_in",
+      "lines": [
+        {
+          "speaker": "Uluka",
+          "text": "हूँ-हूँ! इस नन्हें दीये में मिठी का सच्चा प्यार भरा है। यह दीया सबसे ख़ास बनेगा!"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "scene": 4,
+      "location": "village_street_and_house",
+      "characters": [
+        "Mithi",
+        "Papa"
+      ],
+      "visual": "On Diwali night on decorated with festive lights, Papa places Mithi's small crooked diya at their doorway. As the wick catches flame, intense warm golden light begins radiating magically from it.",
+      "camera": "zoom_in",
+      "lines": [
+        {
+          "speaker": "Narrator",
+          "text": "त्योहार की रात आई। गाँव के अमीर लोगों ने महंगे और बड़े-बड़े दीये जलाए। पापा ने मिठी का बनाया छोटा दीया भी दरवाज़े पर सजा दिया।"
+        },
+        {
+          "speaker": "Narrator",
+          "text": "जैसे ही दीया जला, उसमें से सबसे तेज़ और प्यारी रोशनी निकली! पूरा गाँव उस छोटे से दीये से जगमगा उठा।"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "scene": 4,
+      "location": "village_street_and_house",
+      "characters": [
+        "Mithi",
+        "Papa"
+      ],
+      "visual": "Papa kneels down joyful and astonished next to Mithi, looking at the glowing diya lighting up their home, hugging Mithi tenderly as she beams with happiness.",
+      "camera": "pan_right",
+      "lines": [
+        {
+          "speaker": "Papa",
+          "text": "अरे वाह! मिठी बेटा, तुम्हारे प्यार भरे दीये ने तो पूरे गाँव में उजाला कर दिया!"
+        },
+        {
+          "speaker": "Mithi",
+          "text": "पापा, यह सब आपके लिए है!"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "scene": 4,
+      "location": "village_street_and_house",
+      "characters": [
+        "Mithi",
+        "Papa"
+      ],
+      "visual": "A wide magical night view of during Diwali, bathed in a bright warm glowing light originating from Mithi and Papa's doorway where father and daughter stand happy together.",
+      "camera": "zoom_out",
+      "lines": [
+        {
+          "speaker": "Narrator",
+          "text": "सच्ची सुंदरता और क़ीमत प्यार और सच्चे मन से आती है, पैसों से नहीं।"
+        }
+      ]
+    }
+  ]
+}

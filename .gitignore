@@ -1,0 +1,7 @@
+# big or easy-to-rebuild files
+projects/*/output/
+projects/*/preview/
+projects/*/review_frames/
+projects/*/audio/voice.wav
+projects/*/audio/concat.txt
+tools/__pycache__/

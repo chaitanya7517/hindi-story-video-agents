@@ -1,0 +1,35 @@
+{
+  "style": "Warm 3D digital storybook animation style with rich vibrant colors, gentle cinematic lighting, soft hand-painted textures, whimsical magical atmosphere, and charming rounded character designs.",
+  "characters": [
+    {
+      "name": "Mithi",
+      "look": "A cute 6-year-old Indian village girl with big sparkling dark brown eyes, rosy cheeks, and black hair tied into two braided pigtails with bright red ribbons. She wears a bright mustard-yellow cotton kurti with small printed flowers and olive-green bottoms.",
+      "voice": "Leda"
+    },
+    {
+      "name": "Papa",
+      "look": "A hardworking 40-year-old Indian potter with a kind face, gentle eye wrinkles, a thick dark mustache, and short messy black hair mixed with gray. He wears a beige khadi cotton kurta smudged with dried grey clay, rolled-up sleeves, and a traditional dark brown dhoti.",
+      "voice": "Achird"
+    },
+    {
+      "name": "Uluka",
+      "look": "A beautiful magical white barn owl with large glowing amber eyes, soft fluffy snow-white feathers with faint glowing golden specks, a heart-shaped facial disc, and tiny neat talons.",
+      "voice": "Enceladus"
+    }
+  ],
+  "locations": [
+    {
+      "id": "pottery_shop",
+      "look": "Rustic Indian village pottery shop with textured mud walls, an earthen floor, a traditional stone potter's wheel, stacks of fresh wet clay, and wooden shelves filled with terracotta clay pots and diyas."
+    },
+    {
+      "id": "house_courtyard",
+      "look": "A cozy village home courtyard featuring terracotta tile ground, smooth whitewashed mud walls, decorative traditional floral rangoli patterns on the floor, and small potted plants."
+    },
+    {
+      "id": "village_street_and_house",
+      "look": "A festive Indian village street during Diwali night, with cozy mud-brick houses decorated with sparkling festive lights, colorful rangoli at doorways, and a warm magical glow."
+    }
+  ],
+  "narrator_voice": "Sulafat"
+}
