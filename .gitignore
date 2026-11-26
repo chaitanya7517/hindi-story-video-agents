@@ -5,3 +5,6 @@ projects/*/review_frames/
 projects/*/audio/voice.wav
 projects/*/audio/concat.txt
 tools/__pycache__/
+*.busy
+*.part.wav
+*.tmp.wav
