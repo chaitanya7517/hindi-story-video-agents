@@ -5,65 +5,81 @@
       "name": "Dadi",
       "hindi_name": "दादी",
       "look": "70-year-old grandmother, white hair in a bun, round gold glasses, cream saree with maroon border, small red bindi, gentle smile",
-      "voice": "parler",
+      "voice": "f5",
       "voice_desc": "Rani speaks slowly in a warm, gentle and loving voice like an old grandmother telling a bedtime story. The recording is very clear and close-up, with no background noise.",
-      "seed": 11
+      "seed": 11,
+      "ref": "projects/ganesh-dadi/voices/dadi.wav",
+      "ref_text": "त्योहार आने वाला था और उसके पापा दिन-रात मिट्टी के दीये बना रहे थे। पापा बहुत थक गए थे।"
     },
     {
       "name": "Pari",
       "hindi_name": "परी",
       "look": "9-year-old girl, short bob hair with a pink clip, pink frock with green border",
-      "voice": "parler",
+      "voice": "f5",
       "voice_desc": "A young girl speaks with a high-pitched, sweet and excited voice at a moderate pace. The recording is very clear and close-up, with no background noise.",
-      "seed": 21
+      "seed": 21,
+      "ref": "projects/ganesh-dadi/voices/pari.wav",
+      "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
     },
     {
       "name": "Monu",
       "hindi_name": "मोनू",
       "look": "6-year-old boy, short messy hair, sky-blue kurta and white pyjama",
-      "voice": "parler",
+      "voice": "f5",
       "voice_desc": "A young boy speaks with a high-pitched, playful and excited voice at a fast pace. The recording is very clear and close-up, with no background noise.",
-      "seed": 31
+      "seed": 31,
+      "ref": "projects/ganesh-dadi/voices/monu.wav",
+      "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
     },
     {
       "name": "Golu",
       "hindi_name": "गोलू",
       "look": "10-year-old chubby boy from Rampur, spiky hair, orange vest and khaki shorts",
-      "voice": "parler",
+      "voice": "f5",
       "voice_desc": "A young boy speaks with a high-pitched, energetic and cheeky voice at a moderate pace. The recording is very clear and close-up, with no background noise.",
-      "seed": 41
+      "seed": 41,
+      "ref": "projects/ganesh-dadi/voices/golu.wav",
+      "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
     },
     {
       "name": "Meena",
       "hindi_name": "मीना",
       "look": "10-year-old girl from Shyampur, long single plait, green ghagra and yellow choli",
-      "voice": "parler",
+      "voice": "f5",
       "voice_desc": "A young girl speaks with a high-pitched, clear and confident voice at a moderate pace. The recording is very clear and close-up, with no background noise.",
-      "seed": 51
+      "seed": 51,
+      "ref": "projects/ganesh-dadi/voices/meena.wav",
+      "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
     },
     {
       "name": "Baba",
       "hindi_name": "बाबा",
       "look": "kind old man with a big round belly, big ears, gentle eyes, red tilak, yellow turban, saffron shawl, cream dhoti, cloth bag of modaks, small brown mouse on his shoulder (Ganesh ji in disguise)",
-      "voice": "parler",
+      "voice": "f5",
       "voice_desc": "Rohit speaks slowly in a deep, calm, kind and soothing voice. The recording is very clear and close-up, with no background noise.",
-      "seed": 61
+      "seed": 61,
+      "ref": "projects/ganesh-dadi/voices/baba.wav",
+      "ref_text": "अरे वाह! मिठी बेटा, तुम्हारे प्यार भरे दीये ने तो पूरे गाँव में उजाला कर दिया!"
     },
     {
       "name": "Ramdin",
       "hindi_name": "रामदीन",
       "look": "Rampur headman, big curled moustache, red turban, white kurta, brown waistcoat, wooden stick",
-      "voice": "parler",
+      "voice": "f5",
       "voice_desc": "Aman speaks loudly and quickly in an angry, gruff voice. The recording is very clear and close-up, with no background noise.",
-      "seed": 71
+      "seed": 71,
+      "ref": "projects/ganesh-dadi/voices/ramdin.wav",
+      "ref_text": "अरे मेरी नन्हीं मिठी! तुम तो बहुत छोटी हो। तुम आराम करो बेटा।"
     },
     {
       "name": "Shyamlal",
       "hindi_name": "श्यामलाल",
       "look": "Shyampur headman, thin, grey beard, green turban, white kurta and dhoti",
-      "voice": "parler",
+      "voice": "f5",
       "voice_desc": "A middle-aged man speaks loudly in an irritated, sharp voice at a fast pace. The recording is very clear and close-up, with no background noise.",
-      "seed": 81
+      "seed": 81,
+      "ref": "projects/ganesh-dadi/voices/shyamlal.wav",
+      "ref_text": "हूँ-हूँ! इस नन्हें दीये में मिठी का सच्चा प्यार भरा है। यह दीया सबसे ख़ास बनेगा!"
     },
     {
       "name": "Mooshak",

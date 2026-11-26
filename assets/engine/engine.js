@@ -80,8 +80,8 @@ const AGE = {
   old: { head: 52, leg: 192, torso: 200, sh: 50, arm: 196, w: 22, hr: 11 },
 };
 const SLEEVE = { kurta: .78, vest: 0, frock: .22, choli: .3, saree: .3 };
-// POS: where each named character's head was drawn last (world coords) - used by the camera
-const POS = {};
+// Where each named character's head is (world coords), kept per set - used by the camera
+const POSMAP = {}; let POS_CUR = {};
 function person(x, y, s, o) {
   const L = o.look, A = AGE[L.age || 'adult'], t = o.t || 0, pose = o.pose || 'stand';
   const skin = L.skin || '#c18457', top = L.top || '#e8d9b8', topD = darker(top, .82), bot = L.bottom || '#6b4328';
@@ -141,7 +141,7 @@ function person(x, y, s, o) {
   rect(-A.head * .24, shY - 16, A.head * .48, 22, darker(skin, .85));
   // ----- arms -----
   const LS = [-A.sh, shY + 10], RS = [A.sh, shY + 10], reach = A.arm;
-  const rest = k => [k * (A.sh + 12 + belly * 22), shY + reach * .93];
+  const rest = k => pose === 'sit' || pose === 'sitfloor' ? [k * A.sh * .55, hipY + 4] : [k * (A.sh + 8 + belly * 22), shY + reach * .985];
   let hl = rest(-1), hr = rest(1), bl = 1, br = -1;
   const dir = o.dir || 1;
   switch (pose) {
@@ -187,7 +187,7 @@ function person(x, y, s, o) {
   }
   // face
   const mood = o.mood || 'happy', kid = L.age === 'child', er = kid ? [8.5, 11] : [7, 8.5];
-  const blink = ((t + seed * 1.7) % 4.1) < .13 || o.closedEyes, lk = (o.look || 0) * 3;
+  const blink = ((t + seed * 1.7) % 4.1) < .13 || o.closedEyes, lk = (o.gaze || 0) * 3;
   for (const k of [-1, 1]) {
     const ex = k * R * .38, ey = headY + R * .05;
     if (blink) line(ex - 8, ey, ex + 8, ey, 3, '#2a160c');
@@ -215,7 +215,7 @@ function person(x, y, s, o) {
   if (L.hair === 'braids') for (const k of [-1, 1]) { for (let j = 0; j < 5; j++) ell(k * R * 1.02, headY + R * .4 + j * 19, 11, 12, hairC); circ(k * R * 1.02, headY + R * .4 + 100, 7, L.ribbon || '#d8262e'); }
   ctx.restore();
   // record head position for the camera
-  if (o.name) { const m = ctx.getTransform(); POS[o.name] = [(m.a * x + m.c * (y + headY * s) + m.e) , (m.b * x + m.d * (y + headY * s) + m.f), R * s]; }
+  if (o.name) POS_CUR[o.name] = [x, y + headY * s, A.head * s];
   ctx.restore();
 }
 function drawItem(item, hl, hr, A, t, right) {
@@ -299,6 +299,7 @@ function ganeshMurti(x, y, s, o = {}) {
 }
 
 // ---------- common props ----------
+function charpaiFront(x, y, s) { ctx.save(); ctx.translate(x, y); ctx.scale(s, s); for (const k of [-1, 1]) rect(k * 200 - 9, -112, 18, 112, '#5e3a20'); rect(-212, -118, 424, 18, '#6b4426'); rect(-212, -104, 424, 4, 'rgba(0,0,0,0.25)'); ctx.restore(); }
 function charpai(x, y, s) { ctx.save(); ctx.translate(x, y); ctx.scale(s, s); for (const k of [-1, 1]) { rect(k * 190 - 8, -110, 16, 110, '#6b4426'); } rect(-210, -120, 420, 22, '#7d5131'); ctx.strokeStyle = '#d8c39a'; ctx.lineWidth = 3; for (let i = -190; i < 190; i += 16) { ctx.beginPath(); ctx.moveTo(i, -118); ctx.lineTo(i + 12, -100); ctx.stroke(); } ctx.restore(); }
 function marigoldString(x1, y1, x2, y2, sag, t, cols = ['#ff9a1a', '#ffd21a']) {
   const n = Math.max(6, Math.round(Math.hypot(x2 - x1, y2 - y1) / 16));
@@ -326,20 +327,20 @@ const LE = (sc, k) => (SCENE_LINES[sc][Math.min(k, SCENE_LINES[sc].length - 1)] 
 const since = (T, sc, k, dur = 1) => ease((T - L(sc, k)) / dur);
 function shotAt(T) { let i = 0; for (let k = 0; k < SHOTS.length; k++) if (T >= SHOTS[k].start) i = k; return i; }
 
-// Camera: wide by default; moves in on whoever is talking (if they are on screen)
-function cameraFor(i, T) {
-  const sh = SHOTS[i], key = sh.set === 'courtyard' && sh.scene in SETS_STORY ? 'frame' : sh.scene;
+// Camera: wide by default; glides to whoever is talking (if they are on screen in this set)
+const sceneKey = sh => sh.set === 'courtyard' && SETS_STORY[sh.scene] ? 'frame' : sh.scene;
+function camTarget(key, T) {
   const sc = SCENES[key] || {}, base = sc.cam || [960, 540, 1];
-  const target = T2 => {
-    const sp = speakerAt(T2), custom = sc.camAt && sc.camAt(T2);
-    if (custom) return custom;
-    if (sp && POS[sp] && sp !== 'Dadi' || (sp === 'Dadi' && key === 'frame')) { const p = POS[sp]; if (p) return [p[0], p[1] + 160, sc.closeZoom || 1.32]; }
-    return base;
-  };
-  // smooth: blend toward the target of the current line over ~1s
-  const a = target(T - 1.0), b = target(T);
-  const k = .5; let [x, y, z] = [lerp(a[0], b[0], k), lerp(a[1], b[1], k), lerp(a[2], b[2], k)];
-  z *= 1 + .02 * Math.sin(T * .2); // gentle breathing
+  const custom = sc.camAt && sc.camAt(T); if (custom) return custom;
+  const sp = speakerAt(T), P = POSMAP[key] || {};
+  if (sp && P[sp]) { const [x, y, R] = P[sp]; return [x, y + R * 2.1, clamp((sc.closeZoom || 1.35) * 54 / R, 1.1, 2.6)]; }
+  return base;
+}
+function cameraFor(i, T) {
+  const key = sceneKey(SHOTS[i]); let j = i; while (j > 0 && sceneKey(SHOTS[j - 1]) === key && SHOTS[j - 1].scene === SHOTS[i].scene) j--;
+  const t0 = SHOTS[j].start; let x = 0, y = 0, z = 0;
+  for (let k = 0; k < 6; k++) { const c = camTarget(key, Math.max(t0, T - k * .25)); x += c[0]; y += c[1]; z += c[2]; }
+  x /= 6; y /= 6; z = z / 6 * (1 + .015 * Math.sin(T * .2));
   let tx = W / 2 - x * z, ty = H / 2 - y * z;
   tx = Math.min(0, Math.max(W - W * z, tx)); ty = Math.min(0, Math.max(H - H * z, ty));
   return [z, tx, ty];
@@ -347,7 +348,8 @@ function cameraFor(i, T) {
 const SETS_STORY = {};
 function renderShot(i, T, canvas) {
   const old = ctx; ctx = canvas.getContext('2d');
-  const sh = SHOTS[i], key = sh.set === 'courtyard' && SETS_STORY[sh.scene] ? 'frame' : sh.scene;
+  const sh = SHOTS[i], key = sceneKey(sh);
+  POS_CUR = POSMAP[key] = POSMAP[key] || {};
   const [z, tx, ty] = cameraFor(i, T);
   ctx.setTransform(z, 0, 0, z, tx, ty);
   (SCENES[key] || SCENES.frame).draw(T, sh);

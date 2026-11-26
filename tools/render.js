@@ -12,7 +12,7 @@ const FPS = Number(opt('--fps') || 30);
 const proj = path.join(ROOT, 'projects', name);
 const J = f => JSON.parse(fs.readFileSync(path.join(proj, f), 'utf8'));
 
-const TYPES = { '.html': 'text/html', '.woff2': 'font/woff2', '.json': 'application/json', '.js': 'text/javascript' };
+const TYPES = { '.html': 'text/html', '.css': 'text/css', '.woff2': 'font/woff2', '.json': 'application/json', '.js': 'text/javascript' };
 const server = http.createServer((req, res) => {
   const p = path.join(ROOT, decodeURIComponent(req.url.split('?')[0]));
   if (!p.startsWith(ROOT) || !fs.existsSync(p)) { res.writeHead(404); return res.end(); }

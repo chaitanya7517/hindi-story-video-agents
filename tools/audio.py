@@ -64,7 +64,10 @@ def main(name, o_check=False):
 
     def make(line, out, retry=0):
         c = byname.get(line["speaker"], {})
-        if c.get("voice") == "parler":   # free local voice model (AI4Bharat)
+        if c.get("voice") == "f5":       # free voice cloning (AI4Bharat IndicF5) from the character's reference clip
+            import voice_f5
+            voice_f5.speak(line["text"], os.path.join(ROOT, c["ref"]), c["ref_text"], out)
+        elif c.get("voice") == "parler":   # free local voice model (AI4Bharat)
             import voice_parler
             voice_parler.speak(line["text"], c["voice_desc"], out, seed=c.get("seed", 7) + retry * 1000)
         else:                            # Google Gemini voice; Hindi text only (style notes get read aloud)
@@ -79,7 +82,7 @@ def main(name, o_check=False):
         shot = {"id": s["id"], "start": t, "lines": []}
         for i, line in enumerate(s["lines"]):
             out = os.path.join(adir, f"{s['id']}-{i}.wav")
-            parler = byname.get(line["speaker"], {}).get("voice") == "parler"
+            parler = byname.get(line["speaker"], {}).get("voice") in ("parler", "f5")   # local models: speed check
             if os.path.exists(out) and o_check and not parler:
                 if not check(out, line["text"]):
                     os.remove(out)
