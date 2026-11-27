@@ -128,7 +128,9 @@ def main(name):
     k = int(.25 * SR); duck = np.convolve(duck, np.ones(k) / k, "same")
     music *= duck * cfg.get("music_gain", 1.0)
     fx = np.zeros(len(music))
-    for sc, li, off, nm in cfg.get("sfx", []):
+    for e in cfg.get("sfx", []):
+        if len(e) == 2: add(fx, sfx(e[1]) * cfg.get("sfx_gain", .8), e[0]); continue   # [seconds, name] for silent cartoons
+        sc, li, off, nm = e
         L = lines.get(sc, []); 
         if not L: continue
         l = L[min(li, len(L) - 1)]; t = (l["end"] if off < 0 else l["start"]) + off

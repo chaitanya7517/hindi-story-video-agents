@@ -1,0 +1,53 @@
+{
+ "shots": [
+  {
+   "id": "s01",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "lines": []
+  },
+  {
+   "id": "s02",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "lines": []
+  },
+  {
+   "id": "s03",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "lines": []
+  },
+  {
+   "id": "s04",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "lines": []
+  },
+  {
+   "id": "s05",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "lines": []
+  },
+  {
+   "id": "s06",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "lines": []
+  },
+  {
+   "id": "s07",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "lines": []
+  }
+ ]
+}
