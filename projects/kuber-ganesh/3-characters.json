@@ -1,0 +1,78 @@
+{
+ "style": "Warm 2D storybook cartoon, rich festival colours, soft shading; gods always shown with respect and devotion.",
+ "narrator_voice": "Dadi",
+ "characters": [
+  {
+   "name": "Dadi",
+   "hindi_name": "दादी",
+   "look": "70-year-old grandmother, white hair bun, round gold glasses, cream saree with maroon border",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/dadi.wav",
+   "ref_text": "त्योहार आने वाला था और उसके पापा दिन-रात मिट्टी के दीये बना रहे थे। पापा बहुत थक गए थे।"
+  },
+  {
+   "name": "Pari",
+   "hindi_name": "परी",
+   "look": "9-year-old girl, short bob hair with pink clip, pink frock",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/pari.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
+  },
+  {
+   "name": "Monu",
+   "hindi_name": "मोनू",
+   "look": "6-year-old boy, messy hair, sky-blue kurta",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/monu.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
+  },
+  {
+   "name": "Ganesh",
+   "hindi_name": "बाल गणेश",
+   "look": "Bal Ganesh: small child god, pink-orange skin, elephant head with one broken tusk, gold crown, yellow dhoti, red sash, big round belly, kind playful eyes",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/golu.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
+  },
+  {
+   "name": "Mushak",
+   "hindi_name": "मूषक",
+   "look": "Mushak: small grey-brown mouse, big ears, red tilak, tiny gold anklet, funny and quick",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/mushak.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
+  },
+  {
+   "name": "Kuber",
+   "hindi_name": "कुबेर",
+   "look": "Kuber: big round rich king, golden crown with jewels, many necklaces, purple-gold robe, curled moustache, holds a money pot",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/ramdin.wav",
+   "ref_text": "अरे मेरी नन्हीं मिठी! तुम तो बहुत छोटी हो। तुम आराम करो बेटा।"
+  },
+  {
+   "name": "Shiv",
+   "hindi_name": "भगवान शिव",
+   "look": "Lord Shiva: calm blue skin, matted hair bun with crescent moon and Ganga, snake around neck, tiger-skin cloth, trident, rudraksha beads, gentle smile",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/baba.wav",
+   "ref_text": "अरे वाह! मिठी बेटा, तुम्हारे प्यार भरे दीये ने तो पूरे गाँव में उजाला कर दिया!"
+  },
+  {
+   "name": "Parvati",
+   "hindi_name": "माता पार्वती",
+   "look": "Mata Parvati: graceful mother goddess, red-gold saree, gold crown, long black hair, kind smile",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/parvati.wav",
+   "ref_text": "गणेश, मेरे प्यारे बेटे। जो भी काम करो, मन में प्रेम रखकर करना। यही सबसे बड़ी पूजा है।"
+  },
+  {
+   "name": "Sevak",
+   "hindi_name": "सेवक",
+   "look": "Kuber's servant: thin man, green turban, white dhoti, nervous",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/shyamlal.wav",
+   "ref_text": "हूँ-हूँ! इस नन्हें दीये में मिठी का सच्चा प्यार भरा है। यह दीया सबसे ख़ास बनेगा!"
+  }
+ ]
+}
