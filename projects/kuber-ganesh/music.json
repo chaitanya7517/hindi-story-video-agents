@@ -1,0 +1,10 @@
+{"moods": {"1": "comic", "2": "soft", "3": "royal", "4": "divine", "5": "soft", "6": "royal", "7": "playful",
+           "8": "soft", "9": "comic", "10": "divine", "11": "joy", "12": "joy"},
+ "duck": 0.3, "music_gain": 1.0, "sfx_gain": 0.8, "end_extra": 5,
+ "sfx": [[1, 0, 0.3, "crunch"], [1, 2, 0.2, "boing"], [2, 0, -0.6, "sting"],
+         [3, 0, 0.2, "sparkle"], [3, 5, 0.1, "laugh"],
+         [4, 0, 0.0, "gong"], [4, 2, 0.0, "whoosh"], [4, 15, 0.4, "laugh"],
+         [6, 5, 0.6, "sparkle"], [7, 0, 0.5, "munch"], [7, 3, 0.3, "munch"], [7, 8, 0.2, "boing"],
+         [9, 1, 0.4, "crunch"], [9, 4, 0.5, "crunch"], [9, 4, 2.4, "sparkle"], [9, 8, 0.3, "coins"], [9, 9, 0.4, "crunch"], [9, 11, 1.2, "whoosh"],
+         [10, 0, 0.0, "gong"], [10, 5, 0.3, "sparkle"], [11, 2, 1.0, "munch"], [11, 3, 0.0, "sparkle"], [11, 8, 0.0, "sparkle"],
+         [12, 4, 0.0, "gong"], [12, 6, 0.0, "sparkle"]]}

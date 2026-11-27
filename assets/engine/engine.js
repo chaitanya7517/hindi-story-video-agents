@@ -137,6 +137,7 @@ function person(x, y, s, o) {
   if (ts === 'saree') { ctx.beginPath(); ctx.moveTo(-A.sh * .7, shY - 2); ctx.lineTo(-A.sh * .2, shY - 2); ctx.lineTo(hw, hem - 30); ctx.lineTo(hw - 40, hem); ctx.closePath(); ctx.fillStyle = L.pallu || top; ctx.fill(); line(-A.sh * .2, shY - 2, hw, hem - 30, 7, L.border || '#8a1c1c'); }
   if (L.waistcoat) poly([-A.sh, shY + 4, -A.sh * .25, shY + 4, -A.sh * .2, hipY, -hw * .95, hipY, -hw * .98, lerp(shY, hipY, .5)], L.waistcoat), poly([A.sh, shY + 4, A.sh * .25, shY + 4, A.sh * .2, hipY, hw * .95, hipY, hw * .98, lerp(shY, hipY, .5)], L.waistcoat);
   if (L.shawl) { ctx.beginPath(); ctx.moveTo(-A.sh - 4, shY - 4); ctx.lineTo(-A.sh * .3, shY - 6); ctx.lineTo(hw + 4, lerp(shY, hem, .78)); ctx.lineTo(hw - 30, lerp(shY, hem, .95)); ctx.closePath(); ctx.fillStyle = L.shawl; ctx.fill(); }
+  if (L.jewels) for (let j = 0; j < 3; j++) for (let k = 0; k < 13; k++) { const a = Math.PI * (k / 12); circ(Math.cos(a) * A.sh * (.5 + j * .14), shY + 8 + Math.sin(a) * A.torso * (.18 + j * .09), 4.5, j === 1 ? '#e74c3c' : '#f2c14e'); }
   if (L.mala) for (let k = 0; k < 12; k++) { const a = Math.PI * (k / 11); circ(Math.cos(a) * A.sh * .55, shY + 6 + Math.sin(a) * A.torso * .25, 3.5, L.mala); }
   rect(-A.head * .24, shY - 16, A.head * .48, 22, darker(skin, .85));
   // ----- arms -----
@@ -185,6 +186,22 @@ function person(x, y, s, o) {
     ctx.beginPath(); ctx.moveTo(-R * 1.04, headY + R * .1); ctx.quadraticCurveTo(-R * 1.04, headY - R * 1.28, 0, headY - R * 1.12); ctx.quadraticCurveTo(R * 1.04, headY - R * 1.28, R * 1.04, headY + R * .1); ctx.quadraticCurveTo(R * .7, headY - R * .7, R * .06, headY - R * .7); ctx.quadraticCurveTo(-R * .7, headY - R * .7, -R * 1.04, headY + R * .1); ctx.fillStyle = hc; ctx.fill();
     line(0, headY - R * 1.1, 0, headY - R * .72, 2, darker(hc === '#e8e6e0' ? '#d0d0d0' : '#333333', .6));
   }
+  // divine / royal extras (optional look fields)
+  if (L.jata) { // Shiv ji: tall matted-hair bun, crescent moon, Ganga stream, rudraksha band
+    ell(0, headY - R * 1.15, R * .5, R * .62, hairC); ell(0, headY - R * 1.62, R * .34, R * .36, hairC);
+    for (let k = 0; k < 7; k++) circ(-R * .42 + k * R * .14, headY - R * .86, R * .07, '#7a2e14');
+    ctx.beginPath(); ctx.arc(R * .32, headY - R * 1.42, R * .22, -1.9, 1.2); ctx.lineWidth = R * .08; ctx.strokeStyle = '#fdf6dc'; ctx.stroke();
+    curve(-R * .2, headY - R * 1.9, -R * .55, headY - R * 2.2, -R * .35, headY - R * 2.55, R * .07, 'rgba(160,220,255,0.85)');
+  }
+  if (L.crown) { const cg = L.crown, cy = headY - R * .78;
+    ctx.beginPath(); ctx.moveTo(-R * .82, cy); ctx.lineTo(-R * .66, cy - R * .78); ctx.lineTo(-R * .3, cy - R * .48); ctx.lineTo(0, cy - R * 1.1); ctx.lineTo(R * .3, cy - R * .48); ctx.lineTo(R * .66, cy - R * .78); ctx.lineTo(R * .82, cy); ctx.closePath();
+    ctx.fillStyle = lg(0, cy - R * 1.1, 0, cy, [[0, '#ffe58a'], [1, cg]]); ctx.fill();
+    rect(-R * .86, cy - R * .14, R * 1.72, R * .26, '#f2c14e'); for (const k of [-.5, 0, .5]) circ(k * R, cy - R * .01, R * .08, k ? '#2e86de' : '#e74c3c'); circ(0, cy - R * .72, R * .1, '#2ecc71');
+  }
+  if (L.snake) { // a calm green snake resting around the neck
+    ctx.beginPath(); ctx.moveTo(-A.sh * .9, shY + 4); ctx.quadraticCurveTo(0, shY + A.torso * .3, A.sh * .9, shY + 4); ctx.lineWidth = 11; ctx.strokeStyle = '#3f8f4a'; ctx.stroke();
+    ell(A.sh * .95, shY - 8, 12, 9, '#3f8f4a'); circ(A.sh * .99, shY - 10, 2, '#111');
+  }
   // face
   const mood = o.mood || 'happy', kid = L.age === 'child', er = kid ? [8.5, 11] : [7, 8.5];
   const blink = ((t + seed * 1.7) % 4.1) < .13 || o.closedEyes, lk = (o.gaze || 0) * 3;
@@ -201,6 +218,7 @@ function person(x, y, s, o) {
   if (L.glasses) { ctx.strokeStyle = '#b8902a'; ctx.lineWidth = 2.6; for (const k of [-1, 1]) { ctx.beginPath(); ctx.arc(k * R * .38, headY + R * .05, R * .26, 0, 6.3); ctx.stroke(); } line(-R * .12, headY + R * .02, R * .12, headY + R * .02, 2.5, '#b8902a'); }
   ctx.beginPath(); ctx.arc(0, headY + R * .26, R * .1, .2, Math.PI - .2); ctx.strokeStyle = darker(skin, .75); ctx.lineWidth = 2.5; ctx.stroke();
   if (L.bindi) circ(0, headY - R * .42, R * .07, '#c0182a');
+  if (L.tripundra) { for (const k of [-1, 0, 1]) line(-R * .32, headY - R * .5 + k * R * .1, R * .32, headY - R * .5 + k * R * .1, 3, '#f4f1ea'); circ(0, headY - R * .5, R * .06, '#c0182a'); }
   if (L.tilak) { rrect(-R * .06, headY - R * .62, R * .12, R * .36, 4, '#d4202a'); circ(0, headY - R * .2, R * .05, '#f5c542'); }
   const my = headY + R * .55;
   if (o.talk) { const op = 2 + Math.abs(Math.sin(t * 15 + seed)) * 5; ctx.beginPath(); ctx.moveTo(-R * .22, my - 4); ctx.quadraticCurveTo(0, my, R * .22, my - 4); ctx.quadraticCurveTo(R * .16, my + op * 1.6, 0, my + op * 1.7); ctx.quadraticCurveTo(-R * .16, my + op * 1.6, -R * .22, my - 4); ctx.fillStyle = '#6e1c1f'; ctx.fill(); }
@@ -225,6 +243,10 @@ function drawItem(item, hl, hr, A, t, right) {
   else if (item === 'stick') line(p[0], p[1] - 60, p[0] + 8, p[1] + 150, 8, '#6b4a2a');
   else if (item === 'bamboo') { ctx.save(); ctx.translate(p[0], p[1]); ctx.rotate(-.35); rrect(-150, -7, 300, 14, 7, '#c9b25a'); for (let k = -2; k <= 2; k++) rect(k * 60 - 2, -8, 4, 16, '#9c8840'); ctx.restore(); }
   else if (item === 'jhalar') {}
+  else if (item === 'trishul') { const q = right ? hr : hl; line(q[0], q[1] - 260, q[0], q[1] + 170, 7, '#8a8f99'); for (const k of [-1, 0, 1]) { line(q[0] + k * 26, q[1] - 300 + Math.abs(k) * 10, q[0] + k * 26, q[1] - 250, 6, '#b8bec8'); poly([q[0] + k * 26 - 7, q[1] - 300 + Math.abs(k) * 10, q[0] + k * 26 + 7, q[1] - 300 + Math.abs(k) * 10, q[0] + k * 26, q[1] - 326 + Math.abs(k) * 10], '#b8bec8'); } line(q[0] - 30, q[1] - 250, q[0] + 30, q[1] - 250, 6, '#b8bec8'); circ(q[0], q[1] - 236, 9, '#c0392b'); }
+  else if (item === 'pot') { ell(p[0], p[1] + 6, 30, 28, '#c79422'); ell(p[0], p[1] - 18, 18, 7, '#f2c14e'); for (let k = 0; k < 5; k++) circ(p[0] - 12 + k * 6, p[1] - 22 - (k % 2) * 4, 5, '#ffe58a'); }
+  else if (item === 'ricebowl') { ell(p[0], p[1] + 4, 30, 14, '#c79422'); ell(p[0], p[1] - 2, 26, 9, '#fff8e8'); for (let k = 0; k < 8; k++) circ(p[0] - 18 + k * 5, p[1] - 4 - (k % 3) * 2, 2.2, '#f0e0c0'); }
+  else if (item === 'thali') thali(p[0], p[1] - 4, .55, 1);
 }
 
 // ---------- Mooshak (side view mouse) ----------

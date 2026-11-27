@@ -46,7 +46,7 @@ const server = http.createServer((req, res) => {
     const out = path.join(proj, 'output'); fs.mkdirSync(out, { recursive: true });
     const file = path.join(out, opt('--out') || 'draft.mp4');
     const ff = spawn('ffmpeg', ['-loglevel', 'error', '-y', '-f', 'image2pipe', '-framerate', String(FPS), '-i', '-',
-      '-ss', String(from), '-i', path.join(proj, 'audio', 'voice.wav'),
+      '-ss', String(from), '-i', fs.existsSync(path.join(proj, 'audio', 'mix.wav')) ? path.join(proj, 'audio', 'mix.wav') : path.join(proj, 'audio', 'voice.wav'),
       '-af', 'apad', '-c:v', 'libx264', '-preset', 'medium', '-crf', '19', '-pix_fmt', 'yuv420p',
       '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', '-movflags', '+faststart', file], { stdio: ['pipe', 'inherit', 'inherit'] });
     const n = Math.round((to - from) * FPS), t0 = Date.now();
