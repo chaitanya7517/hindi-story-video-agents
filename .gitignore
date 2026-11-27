@@ -8,3 +8,4 @@ tools/__pycache__/
 *.busy
 *.part.wav
 *.tmp.wav
+projects/kuber-ganesh/release/*.mp4
