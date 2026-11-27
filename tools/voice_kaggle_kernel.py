@@ -5,7 +5,11 @@ Inputs (Kaggle datasets attached to this notebook):
 Output: /kaggle/working/out/<id>.wav (24 kHz) - downloaded by tools/kaggle_voices.py"""
 import glob, json, os, subprocess, sys, time
 t0 = time.time()
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "git+https://github.com/ai4bharat/IndicF5.git", "transformers==4.46.1"], check=True)
+os.environ.update(USE_TF="0", USE_JAX="0", USE_FLAX="0")   # transformers must not import Kaggle's jax/tensorflow
+pip = lambda *a: subprocess.run([sys.executable, "-m", "pip", "install", "-q", *a], check=True)
+# IndicF5 pins an old numpy that breaks Kaggle's own packages -> install it WITHOUT its pins, then only what it really needs
+pip("--no-deps", "git+https://github.com/ai4bharat/IndicF5.git")
+pip("transformers==4.46.1", "ema_pytorch", "x_transformers", "torchdiffeq", "vocos", "jieba", "pypinyin", "cached_path", "transformers_stream_generator", "pydub")
 import numpy as np, soundfile as sf, torch, torchaudio
 
 MODEL = os.path.dirname(glob.glob("/kaggle/input/**/model.safetensors", recursive=True)[0])
