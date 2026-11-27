@@ -1,0 +1,2 @@
+{"moods": {"1": "soft", "2": "soft", "3": "soft", "4": "divine", "5": "soft"}, "duck": 0.35, "music_gain": 0.9, "sfx_gain": 0.7, "end_extra": 3,
+ "sfx": [[1, 0, 0.1, "sting"], [4, 1, -0.2, "sparkle"]]}

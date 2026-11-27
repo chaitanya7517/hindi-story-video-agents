@@ -1,0 +1,30 @@
+{
+ "style": "FLUX storybook pictures + Ken Burns",
+ "narrator_voice": "Dadi",
+ "characters": [
+  {
+   "name": "Dadi",
+   "hindi_name": "दादी",
+   "look": "70-year-old grandmother, white hair bun, round gold glasses, cream saree with maroon border",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/dadi.wav",
+   "ref_text": "त्योहार आने वाला था और उसके पापा दिन-रात मिट्टी के दीये बना रहे थे। पापा बहुत थक गए थे।"
+  },
+  {
+   "name": "Meera",
+   "hindi_name": "मीरा",
+   "look": "9-year-old girl, short bob hair with pink clip, pink frock",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/pari.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!"
+  },
+  {
+   "name": "Amma",
+   "hindi_name": "अम्मा",
+   "look": "70-year-old grandmother, white hair bun, round gold glasses, cream saree with maroon border",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/dadi.wav",
+   "ref_text": "त्योहार आने वाला था और उसके पापा दिन-रात मिट्टी के दीये बना रहे थे। पापा बहुत थक गए थे।"
+  }
+ ]
+}
