@@ -192,6 +192,10 @@ function monkey(x, y, s, o = {}) {
   if (pose === 'sad') { hl = [-20, baseY - 20]; hr = [20, baseY - 20]; }
   if (pose === 'eat' || o.hold === 'mango') { hl = [-16, baseY - 108]; hr = [16, baseY - 108]; }
   if (pose === 'hang') { hl = [-70, baseY + 20]; hr = [64, baseY + 26]; }
+  if (o.hold === 'pot' || o.hold === 'laddoo') { hl = [-24, baseY - 70]; hr = [24, baseY - 70]; }
+  if (o.hold === 'potUp') { hl = [-40, baseY - 200 + Math.sin(t * 9) * 10]; hr = [40, baseY - 200 + Math.sin(t * 9) * 10]; }
+  if (pose === 'throw') { hl = [-50, baseY - 10]; hr = [70, baseY + 10]; }
+  if (o.potHead) { hl = [-50, baseY - 200]; hr = [50, baseY - 200]; }
   if (pose === 'wave') { hr = [86, baseY - 150 + Math.sin(t * 10) * 10]; }
   if (o.hold === 'hat' && pose !== 'hang') hr = [80, baseY - 120];
   if (o.hands) { if (o.hands.l) hl = o.hands.l; if (o.hands.r) hr = o.hands.r; }
@@ -225,11 +229,36 @@ function monkey(x, y, s, o = {}) {
   else { curve(-20, 26, 2, 42, 24, 22, 4, '#4a2a14'); }   // cheeky grin
   if (o.bump) { circ(10, -52, 16, '#d8826a'); circ(6, -56, 5, 'rgba(255,255,255,.4)'); }
   if (o.hat) strawHat(0, -44, .85, .1);
+  if (o.potHead) laddooPot(0, -78, .95, Math.PI);
   if (o.straw) for (let i = 0; i < 7; i++) line(-40 + i * 13, -44 - (i % 3) * 6, -30 + i * 13, -70 - (i * 7) % 14, 3, '#e0b040');
   ctx.restore();
   // held items (drawn over hands)
   if (o.hold === 'hat') strawHat(hr[0], hr[1] - 14, .85, .3);
+  if (o.hold === 'pot') laddooPot(0, baseY - 66, .95);
+  if (o.hold === 'potUp') laddooPot(0, baseY - 214 + Math.sin(t * 9) * 10, .95);
+  if (o.hold === 'laddoo') laddoo(0, baseY - 80, 1.4);
+  if (o.hold === 'potHang') laddooPot((hl[0] + hr[0]) / 2, (hl[1] + hr[1]) / 2 + 30, .95, Math.PI);
   if (o.hold === 'mango' || pose === 'eat') mango(0, baseY - 118, .9);
   ctx.restore();
   if (o.name) POS_CUR[o.name] = [x, y + (baseY + hy) * s, 56 * s];
+}
+
+// ---------- more props (episode: छुटकी और गोलू) ----------
+function laddooPot(x, y, s = 1, rot = 0) {   // brass pot full of laddoos
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.scale(s, s);
+  ell(0, 6, 34, 30, '#c79422'); ell(-10, -2, 9, 16, 'rgba(255,255,255,.25)', -.3); ell(0, -20, 22, 8, '#f2c14e');
+  for (const [dx, dy] of [[-12, -26], [0, -32], [12, -26], [-5, -38], [7, -40]]) { circ(dx, dy, 9, '#ffa424'); circ(dx - 2, dy - 3, 3, '#ffd27a'); }
+  ctx.restore();
+}
+function laddoo(x, y, s = 1) { circ(x, y, 10 * s, '#ffa424'); circ(x - 3 * s, y - 3 * s, 3.5 * s, '#ffd27a'); }
+function bulb(x, y, a = 1) {    // "idea!" light bulb
+  if (a <= 0) return;
+  const p = Math.min(1, a * 1.5), sc = p < 1 ? .4 + .6 * p + Math.sin(p * Math.PI) * .3 : 1;
+  ctx.save(); ctx.globalAlpha = Math.min(1, a * 2); ctx.translate(x, y); ctx.scale(sc, sc);
+  light(0, -10, 120, '255,240,140', .7);
+  for (let i = 0; i < 8; i++) { const ang = i * .785; line(Math.cos(ang) * 58, -10 + Math.sin(ang) * 58, Math.cos(ang) * 78, -10 + Math.sin(ang) * 78, 6, '#ffd21f'); }
+  circ(0, -14, 40, '#fff27a'); ctx.lineWidth = 4; ctx.strokeStyle = '#c99a10'; ctx.beginPath(); ctx.arc(0, -14, 40, 0, 6.2832); ctx.stroke();
+  rrect(-18, 22, 36, 26, 6, '#9aa3ad'); line(-18, 31, 18, 31, 3, '#6a7078'); line(-18, 40, 18, 40, 3, '#6a7078');
+  curve(-12, -10, 0, -34, 12, -10, 4, '#e0a010');
+  ctx.restore();
 }

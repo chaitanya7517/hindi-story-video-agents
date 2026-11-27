@@ -182,7 +182,7 @@ function person(x, y, s, o) {
     for (let k = 0; k < n; k++) { const a = Math.PI * (1.08 + k * .84 / (n - 1)); const bx = Math.cos(a) * R * .95, by = headY + Math.sin(a) * R * .95; poly([bx - 9, by + 6, bx + 9, by + 6, bx * 1.2, by - (L.hair === 'spiky' ? 22 : 12)], hc); }
     ell(-R * .92, headY - R * .1, R * .16, R * .38, hc); ell(R * .92, headY - R * .1, R * .16, R * .38, hc);
     if (L.grey) for (const gx of [-.5, -.15, .4]) line(gx * R, headY - R * 1.05, gx * R + 8, headY - R * .7, 2, '#9a9a9a');
-  } else if (L.hair === 'bun' || L.hair === 'plait' || L.hair === 'long') {
+  } else if (L.hair === 'bun' || L.hair === 'plait' || L.hair === 'long' || L.hair === 'braids') {
     ctx.beginPath(); ctx.moveTo(-R * 1.04, headY + R * .1); ctx.quadraticCurveTo(-R * 1.04, headY - R * 1.28, 0, headY - R * 1.12); ctx.quadraticCurveTo(R * 1.04, headY - R * 1.28, R * 1.04, headY + R * .1); ctx.quadraticCurveTo(R * .7, headY - R * .7, R * .06, headY - R * .7); ctx.quadraticCurveTo(-R * .7, headY - R * .7, -R * 1.04, headY + R * .1); ctx.fillStyle = hc; ctx.fill();
     line(0, headY - R * 1.1, 0, headY - R * .72, 2, darker(hc === '#e8e6e0' ? '#d0d0d0' : '#333333', .6));
   }

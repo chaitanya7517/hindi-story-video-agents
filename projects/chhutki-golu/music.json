@@ -1,0 +1,107 @@
+{
+ "moods": {
+  "1": "comic"
+ },
+ "duck": 1.0,
+ "music_gain": 1.0,
+ "sfx_gain": 0.9,
+ "end_extra": 3,
+ "sfx": [
+  [
+   0.6,
+   "sting"
+  ],
+  [
+   6.8,
+   "whoosh"
+  ],
+  [
+   8.0,
+   "boing"
+  ],
+  [
+   8.1,
+   "sting"
+  ],
+  [
+   8.2,
+   "whoosh"
+  ],
+  [
+   9.6,
+   "munch"
+  ],
+  [
+   11,
+   "boing"
+  ],
+  [
+   11.8,
+   "boing"
+  ],
+  [
+   12.6,
+   "boing"
+  ],
+  [
+   13.5,
+   "whoosh"
+  ],
+  [
+   14.1,
+   "crunch"
+  ],
+  [
+   14.15,
+   "gong"
+  ],
+  [
+   18.8,
+   "sparkle"
+  ],
+  [
+   21.5,
+   "laugh"
+  ],
+  [
+   23.5,
+   "boing"
+  ],
+  [
+   26,
+   "whoosh"
+  ],
+  [
+   26.8,
+   "whoosh"
+  ],
+  [
+   27.6,
+   "boing"
+  ],
+  [
+   27.7,
+   "sting"
+  ],
+  [
+   30,
+   "laugh"
+  ],
+  [
+   33.6,
+   "whoosh"
+  ],
+  [
+   34.4,
+   "sparkle"
+  ],
+  [
+   36,
+   "laugh"
+  ],
+  [
+   37,
+   "sparkle"
+  ]
+ ]
+}

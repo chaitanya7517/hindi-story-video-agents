@@ -1,0 +1,41 @@
+{
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0,
+   "end": 6.5,
+   "lines": []
+  },
+  {
+   "id": "s02",
+   "start": 6.5,
+   "end": 10.5,
+   "lines": []
+  },
+  {
+   "id": "s03",
+   "start": 10.5,
+   "end": 17,
+   "lines": []
+  },
+  {
+   "id": "s04",
+   "start": 17,
+   "end": 21,
+   "lines": []
+  },
+  {
+   "id": "s05",
+   "start": 21,
+   "end": 28,
+   "lines": []
+  },
+  {
+   "id": "s06",
+   "start": 28,
+   "end": 40,
+   "lines": []
+  }
+ ],
+ "duration": 40
+}
