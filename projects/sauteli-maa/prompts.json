@@ -1,0 +1,16 @@
+{
+ "style": "detailed colorful Indian cartoon storybook illustration, 2D digital painting, soft warm lighting, expressive emotional faces, rich village details, clean lines, high quality",
+ "characters": {
+  "Meera": "Meera, a 10-year-old thin Indian village girl with two long black braids tied with red ribbons, big brown eyes, wearing a faded blue frock with small white flowers, barefoot",
+  "Kamla": "Kamla, a stern plump Indian stepmother about 40 years old, dark green saree with golden border, big red bindi, hair in a tight bun, many gold bangles",
+  "Pinki": "Pinki, a spoiled chubby 10-year-old Indian girl with short hair and a pink hairband, shiny pink silk frock, gold earrings",
+  "Ramesh": "Ramesh, a thin tired Indian farmer father about 45, white kurta, brown dhoti, orange cotton towel on his shoulder, small mustache"
+ },
+ "images": [
+  {"id": "p01", "prompt": "{Meera} sweeping the mud courtyard of a small village house with a broom at sunrise, while {Kamla} sits on a wooden charpai drinking tea and pointing at her angrily, thatched roof hut, cow and tulsi plant in background", "seed": 11},
+  {"id": "p02", "prompt": "{Meera} sitting alone crying beside a village pond at sunset, holding an old photo frame of her late mother to her chest, lotus flowers, banyan tree, orange sky", "seed": 12},
+  {"id": "p03", "prompt": "{Pinki} happily eating a plate of laddoos and jalebis at a table inside a village home, while {Meera} stands hungry at the doorway looking sad, {Kamla} smiling at Pinki", "seed": 13},
+  {"id": "p04", "prompt": "a kind old Indian grandmother with white hair in a white saree hugging {Meera} and giving her a warm roti under a huge banyan tree in a village, gentle smile, Meera crying with relief", "seed": 14},
+  {"id": "p05", "prompt": "emotional scene: {Meera} with tears on her face standing in a village courtyard, {Kamla} shouting at her with a raised hand, {Ramesh} standing helpless in the background near the hut door, dramatic light", "seed": 15}
+ ]
+}
