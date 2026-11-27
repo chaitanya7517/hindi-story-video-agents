@@ -329,18 +329,38 @@ function shotAt(T) { let i = 0; for (let k = 0; k < SHOTS.length; k++) if (T >= 
 
 // Camera: wide by default; glides to whoever is talking (if they are on screen in this set)
 const sceneKey = sh => sh.set === 'courtyard' && SETS_STORY[sh.scene] ? 'frame' : sh.scene;
+// Who the camera should be on: the current speaker is HELD through the short pauses between lines
+// (no zoom-out/zoom-in "pumping"), very short lines (< 1.6 s) don't move the camera,
+// and after 1.5 s of silence it eases back to the wide shot.
+function camSpeaker(T) {
+  let best = null;
+  for (const l of LINES) {
+    if (l.start > T) break;
+    if (l.end - l.start >= 1.6 || (best && best.speaker === l.speaker)) best = l;
+  }
+  return best && T - best.end < 1.5 ? best.speaker : null;
+}
 function camTarget(key, T) {
   const sc = SCENES[key] || {}, base = sc.cam || [960, 540, 1];
-  const custom = sc.camAt && sc.camAt(T); if (custom) return custom;
-  const sp = speakerAt(T), P = POSMAP[key] || {};
-  if (sp && P[sp]) { const [x, y, R] = P[sp]; return [x, y + R * 2.1, clamp((sc.closeZoom || 1.35) * 54 / R, 1.1, 2.6)]; }
+  const custom = sc.camAt && sc.camAt(T); if (custom) return [custom[0], custom[1], Math.min(custom[2], 1.75)];
+  const sp = camSpeaker(T), P = POSMAP[key] || {};
+  if (sp && P[sp]) { const [x, y, R] = P[sp]; return [x, y + R * 2.1, clamp((sc.closeZoom || 1.25) * 54 / R, 1.05, 1.7)]; }
   return base;
 }
+// Smooth camera: weighted average of where the camera wants to be over a 3-second window
+// (Hann/bell-shaped weights, starting 0.6 s ahead) -> every move eases in and eases out, like a real dolly.
+const CAM_N = 24, CAM_BACK = 2.4, CAM_AHEAD = 0.6;
+const CAM_W = Array.from({ length: CAM_N }, (_, k) => Math.sin(Math.PI * (k + .5) / CAM_N) ** 2);
 function cameraFor(i, T) {
   const key = sceneKey(SHOTS[i]); let j = i; while (j > 0 && sceneKey(SHOTS[j - 1]) === key && SHOTS[j - 1].scene === SHOTS[i].scene) j--;
-  const t0 = SHOTS[j].start; let x = 0, y = 0, z = 0;
-  for (let k = 0; k < 6; k++) { const c = camTarget(key, Math.max(t0, T - k * .25)); x += c[0]; y += c[1]; z += c[2]; }
-  x /= 6; y /= 6; z = z / 6 * (1 + .015 * Math.sin(T * .2));
+  let k2 = i; while (k2 < SHOTS.length - 1 && sceneKey(SHOTS[k2 + 1]) === key && SHOTS[k2 + 1].scene === SHOTS[i].scene) k2++;
+  const t0 = SHOTS[j].start, t1 = SHOTS[k2].end;
+  let x = 0, y = 0, lz = 0, ws = 0;
+  for (let k = 0; k < CAM_N; k++) {
+    const t = clamp(T + CAM_AHEAD - (CAM_BACK + CAM_AHEAD) * k / (CAM_N - 1), t0, t1), w = CAM_W[k];
+    const c = camTarget(key, t); x += c[0] * w; y += c[1] * w; lz += Math.log(c[2]) * w; ws += w;
+  }
+  x /= ws; y /= ws; const z = Math.exp(lz / ws) * (1 + .01 * Math.sin(T * .2));   // zoom averaged in log space = even speed
   let tx = W / 2 - x * z, ty = H / 2 - y * z;
   tx = Math.min(0, Math.max(W - W * z, tx)); ty = Math.min(0, Math.max(H - H * z, ty));
   return [z, tx, ty];
