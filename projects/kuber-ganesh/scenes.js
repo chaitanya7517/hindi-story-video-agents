@@ -349,13 +349,15 @@ function kailash(T, sc) {
     const a = ease((T - L(4, 1)) / Math.max(1, LE(4, 3) - L(4, 1)));
     vimana(lerp(2300, 1730, a), lerp(150, 880, a), .78, T);
     const out = L(4, 4) - .6, k = walkPos(T, out, out + 1.8, 1700, 1480);
-    const leave = L(4, 14), gx = walkPos(T, leave, leave + 3, 1160, 1640), mx = walkPos(T, leave + .3, leave + 3.3, 1300, 1760);
+    const leave = L(4, 14), gx = walkPos(T, leave, leave + 3, 1160, 1560), mx = walkPos(T, leave + .3, leave + 3.3, 1300, 1690);
+    // Kuber is drawn first (behind) and steps aside to his chariot when Ganesh leaves with him, so he never hides Ganesh
+    const k2 = T > leave - .8 ? walkPos(T, leave - .8, leave + 1.2, 1480, 1900) : k;
+    if (T > out) who('Kuber', k2.x, 985, 1, { walk: k2.walk, pose: k2.walk ? 'stand' : during(4, 4) ? 'fold' : during(4, 6) ? 'point' : 'stand', dir: k2 === k ? -1 : 1, gaze: -1, mood: during(4, 11) ? 'surprised' : 'happy' });
     if (T < L(4, 2)) { gan(1250, 975, 1, { pose: 'dance', dir: -1 }); mush(1420, 980, 1.1, { pose: 'run', flip: Math.sin(T) > 0 }); }
     else {
       gan(gx.x, 975, 1, { pose: gx.walk ? 'walk' : during(4, 12) ? 'stand' : 'stand', dir: on(4, 12) && !on(4, 14) ? -1 : 1, mood: on(4, 12) ? 'hungry' : 'happy', gaze: on(4, 12) ? -1 : 1 });
       mush(mx.x, 980, 1.1, { pose: mx.walk ? 'run' : during(4, 2) ? 'shock' : during(4, 14) ? 'dance' : 'stand', mood: during(4, 2) ? 'shock' : 'happy' });
     }
-    if (T > out) who('Kuber', k.x, 985, 1, { walk: k.walk, pose: k.walk ? 'stand' : during(4, 4) ? 'fold' : during(4, 6) ? 'point' : 'stand', dir: -1, gaze: -1, mood: during(4, 11) ? 'surprised' : 'happy' });
   } else {
     const k = walkPos(T, L(10, 0) - 1.5, L(10, 0) + .8, 2100, 1260);
     who('Kuber', k.x, 985, 1, { walk: k.walk, pose: k.walk ? 'stand' : T > L(10, 6) + 1.5 ? 'hold' : 'kneel', dir: -1, item: T > L(10, 6) + 1.8 ? 'ricebowl' : null, mood: T > L(10, 5) ? 'sad' : 'worried', gaze: -1 });

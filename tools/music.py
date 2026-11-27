@@ -137,7 +137,8 @@ def main(name):
     voice = read_wav(vp) if os.path.exists(vp) else np.zeros(1)   # music-only test before voices exist
     out = np.zeros(len(music)); out[:len(voice)] += voice; out += music + fx
     out[-int(3 * SR):] *= np.linspace(1, 0, int(3 * SR))
-    peak = np.abs(out).max(); out = out / max(1, peak / .95)
+    peak = np.abs(out).max()
+    a = np.abs(out); out = np.where(a > .85, np.sign(out) * (.85 + .13 * np.tanh((a - .85) / .13)), out)   # soft limiter: rare loud peaks are rounded off, voices stay loud
     with wave.open(os.path.join(proj, "audio", "mix.wav"), "w") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((out * 32767).astype(np.int16).tobytes())
     print(f"mix.wav {len(out) / SR:.1f}s, peak {peak:.2f}, voice rms {np.sqrt((voice ** 2).mean()):.3f}, music rms {np.sqrt((music ** 2).mean()):.3f}")
