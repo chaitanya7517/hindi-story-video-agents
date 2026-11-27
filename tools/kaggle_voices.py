@@ -4,7 +4,8 @@
 3. runs the private GPU notebook <user>/hindi-voice-agent (tools/voice_kaggle_kernel.py)
 4. downloads the voices, trims silence, checks speaking speed, and saves them into audio/lines/
 The model itself is uploaded once as the private dataset <user>/indicf5-model (--setup-model).
-Usage: python tools/kaggle_voices.py <project> --user <kaggle_username> [--setup-model]"""
+Usage: python tools/kaggle_voices.py <project> --user <kaggle_username> [--setup-model] [--collect]
+--collect: don't start a new run, just wait for the running one and save its voices"""
 import json, os, shutil, subprocess, sys, time, wave
 sys.path.insert(0, os.path.dirname(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,22 +40,26 @@ def setup_model(user):
     print(kg("datasets", "create", "-p", d, "--dir-mode", "tar"))
     wait_dataset(ref)
 
-def main(project, user):
+def main(project, user, collect=False):
     from audio import trim, sane_length
     proj = os.path.join(ROOT, "projects", project)
     shots = json.load(open(os.path.join(proj, "4-storyboard.json")))["shots"]
     chars = {c["name"]: c for c in json.load(open(os.path.join(proj, "3-characters.json")))["characters"]}
     adir = os.path.join(proj, "audio", "lines"); os.makedirs(adir, exist_ok=True)
-    jd = os.path.join(WORK, "jobs"); shutil.rmtree(jd, ignore_errors=True); os.makedirs(os.path.join(jd, "refs"))
+    jd = os.path.join(WORK, "jobs")
+    if not collect: shutil.rmtree(jd, ignore_errors=True); os.makedirs(os.path.join(jd, "refs"))
     jobs = []
     for s in shots:
         for i, l in enumerate(s["lines"]):
             lid = f"{s['id']}-{i}"
             if os.path.exists(os.path.join(adir, lid + ".wav")): continue
             c = chars[l["speaker"]]; ref = "refs/" + os.path.basename(c["ref"])
-            if not os.path.exists(os.path.join(jd, ref)): shutil.copy(os.path.join(ROOT, c["ref"]), os.path.join(jd, ref))
+            if not collect and not os.path.exists(os.path.join(jd, ref)): shutil.copy(os.path.join(ROOT, c["ref"]), os.path.join(jd, ref))
             jobs.append({"id": lid, "text": l["text"], "ref": ref, "ref_text": c["ref_text"]})
     if not jobs: print("all voice lines exist"); return
+    kref = f"{user}/hindi-voice-agent"
+    if collect:   # a run is already going: just wait for it and save what it made
+        return wait_and_save(kref, jobs, adir)
     json.dump(jobs, open(os.path.join(jd, "jobs.json"), "w"), ensure_ascii=False, indent=1)
     ref = f"{user}/voice-jobs"
     meta(jd, {"title": "voice-jobs", "id": ref, "licenses": [{"name": "other"}]})
@@ -63,10 +68,13 @@ def main(project, user):
     wait_dataset(ref); time.sleep(20)
     kd = os.path.join(WORK, "kernel"); shutil.rmtree(kd, ignore_errors=True); os.makedirs(kd)
     shutil.copy(os.path.join(ROOT, "tools", "voice_kaggle_kernel.py"), kd)
-    kref = f"{user}/hindi-voice-agent"
     meta(kd, {"id": kref, "title": "hindi-voice-agent", "code_file": "voice_kaggle_kernel.py", "language": "python", "kernel_type": "script",
               "is_private": True, "enable_gpu": True, "enable_internet": True, "dataset_sources": [f"{user}/indicf5-model", ref]})
     print(kg("kernels", "push", "-p", kd, "--accelerator", "NvidiaTeslaT4"))
+    wait_and_save(kref, jobs, adir)
+
+def wait_and_save(kref, jobs, adir):
+    from audio import trim, sane_length
     t0 = time.time()
     while True:
         time.sleep(30); s = kg("kernels", "status", kref, check=False).lower()
@@ -90,4 +98,4 @@ def main(project, user):
 if __name__ == "__main__":
     a = sys.argv[1:]; user = a[a.index("--user") + 1]
     if "--setup-model" in a: setup_model(user)
-    if a[0] != "--setup-model": main(a[0], user)
+    if a[0] != "--setup-model": main(a[0], user, "--collect" in a)
