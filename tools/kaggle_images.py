@@ -20,7 +20,7 @@ def main(project, pfile, user):
         jobs.append({"id": im["id"], "prompt": p + ", " + P.get("style", ""), "seed": im.get("seed", 7), "w": im.get("w", 1344), "h": im.get("h", 768)})
     if not jobs: print("all images exist"); return
     kd = os.path.join(WORK, "img-kernel"); shutil.rmtree(kd, ignore_errors=True); os.makedirs(kd)
-    code = open(os.path.join(ROOT, "tools", "image_kaggle_kernel.py")).read().replace("__JOBS__", json.dumps(jobs, ensure_ascii=False).replace("'''", ""))
+    code = open(os.path.join(ROOT, "tools", "image_kaggle_kernel.py")).read().replace("__JOBS__", json.dumps(jobs, ensure_ascii=False).replace("'''", "")).replace("__MODEL__", P.get("model", "flux"))
     open(os.path.join(kd, "image_agent.py"), "w").write(code)
     kref = f"{user}/hindi-image-agent"
     json.dump({"id": kref, "title": "hindi-image-agent", "code_file": "image_agent.py", "language": "python", "kernel_type": "script",
