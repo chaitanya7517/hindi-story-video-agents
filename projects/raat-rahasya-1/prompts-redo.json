@@ -1,0 +1,44 @@
+{
+ "model": "flux",
+ "style": "detailed colorful Indian cartoon storybook illustration, 2D digital painting, expressive emotional faces, rich village details, clean lines, high quality",
+ "characters": {
+  "Dadi": "a kind 70-year-old Indian grandmother with white hair in a bun, round gold glasses, cream cotton saree with a maroon border",
+  "Monu": "Monu, a 10-year-old Indian boy with short messy black hair, yellow half-sleeve t-shirt, blue shorts",
+  "Pari": "Pari, a 9-year-old Indian girl with two ponytails tied with pink ribbons, pink frock with white polka dots",
+  "Chintu": "Chintu, a chubby 7-year-old Indian boy with round black glasses, red and white striped t-shirt, brown shorts",
+  "Gauri": "Gauri, a thin 10-year-old poor Indian village girl with long untidy black hair, faded torn green ghagra and blouse, silver anklets, barefoot",
+  "Amma": "Gauri's mother, a thin sick Indian village woman about 35, faded blue cotton saree, lying weakly on a rope cot"
+ },
+ "images": [
+  {
+   "id": "p03",
+   "prompt": "{Monu}, {Pari} and {Chintu} running happily on a dusty village road in summer carrying small bags, green fields and mango trees behind, no text, no signs",
+   "seed": 501
+  },
+  {
+   "id": "p16",
+   "prompt": "{Monu} and {Pari} walking into a mango orchard in the early morning sunlight, only two children, looking around curiously, fallen leaves on the ground",
+   "seed": 502
+  },
+  {
+   "id": "p17",
+   "prompt": "close-up of the ground under a mango tree: a trail of small child footprints pressed into soft brown mud, a few fallen mangoes and one tiny silver anklet bell, no people, no feet, morning light",
+   "seed": 503
+  },
+  {
+   "id": "p19",
+   "prompt": "{Monu} tiptoeing down the stairs of a village house at midnight holding a small torch, finger on his lips, followed by {Pari}, exactly two children, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 504
+  },
+  {
+   "id": "p24",
+   "prompt": "{Pari} kneeling kindly and holding the hand of {Gauri} who is crying, exactly two girls, in a moonlit mango orchard, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 505
+  },
+  {
+   "id": "p31",
+   "prompt": "{Amma} lying weakly on a rope cot inside a poor mud hut, a sick woman with long hair in a faded blue saree, {Dadi} sitting beside her giving medicine with a small spoon, soft morning light from a small window",
+   "seed": 506
+  }
+ ]
+}

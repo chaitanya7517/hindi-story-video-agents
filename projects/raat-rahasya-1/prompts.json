@@ -22,8 +22,8 @@
   },
   {
    "id": "p03",
-   "prompt": "a colourful village bus stop on a dusty road in summer, {Monu}, {Pari} and {Chintu} jumping happily off an old bus with small bags, green fields and mango trees behind",
-   "seed": 102
+   "prompt": "{Monu}, {Pari} and {Chintu} running happily on a dusty village road in summer carrying small bags, green fields and mango trees behind, no text, no signs",
+   "seed": 501
   },
   {
    "id": "p04",
@@ -87,13 +87,13 @@
   },
   {
    "id": "p16",
-   "prompt": "{Monu} and {Pari} walking into a mango orchard in the early morning sunlight, looking around curiously, fallen leaves on the ground",
-   "seed": 115
+   "prompt": "{Monu} and {Pari} walking into a mango orchard in the early morning sunlight, only two children, looking around curiously, fallen leaves on the ground",
+   "seed": 502
   },
   {
    "id": "p17",
-   "prompt": "close-up of small bare footprints in the soft mud under a mango tree, a few fallen mangoes and a tiny silver anklet bell lying on the ground, morning light",
-   "seed": 116
+   "prompt": "close-up of the ground under a mango tree: a trail of small child footprints pressed into soft brown mud, a few fallen mangoes and one tiny silver anklet bell, no people, no feet, morning light",
+   "seed": 503
   },
   {
    "id": "p18",
@@ -102,8 +102,8 @@
   },
   {
    "id": "p19",
-   "prompt": "{Monu} and {Pari} tiptoeing down the stairs of a village house at midnight holding a small torch, finger on lips, night scene, bright full moon, deep blue moonlight, warm lantern glow",
-   "seed": 118
+   "prompt": "{Monu} tiptoeing down the stairs of a village house at midnight holding a small torch, finger on his lips, followed by {Pari}, exactly two children, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 504
   },
   {
    "id": "p20",
@@ -127,8 +127,8 @@
   },
   {
    "id": "p24",
-   "prompt": "{Pari} kneeling kindly next to {Gauri} who is crying in a moonlit mango orchard, Pari holding Gauri's hand, night scene, bright full moon, deep blue moonlight, warm lantern glow",
-   "seed": 123
+   "prompt": "{Pari} kneeling kindly and holding the hand of {Gauri} who is crying, exactly two girls, in a moonlit mango orchard, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 505
   },
   {
    "id": "p25",
@@ -162,8 +162,8 @@
   },
   {
    "id": "p31",
-   "prompt": "{Amma} lying on a rope cot inside a poor mud hut, {Dadi} sitting beside her giving medicine in a small spoon, soft morning light from a small window",
-   "seed": 130
+   "prompt": "{Amma} lying weakly on a rope cot inside a poor mud hut, a sick woman with long hair in a faded blue saree, {Dadi} sitting beside her giving medicine with a small spoon, soft morning light from a small window",
+   "seed": 506
   },
   {
    "id": "p32",
