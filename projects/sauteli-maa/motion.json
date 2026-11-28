@@ -1,3 +1,13 @@
-{"clips": [
- {"id": "m02", "image": "images/p02.png", "prompt": "a sad little Indian girl sitting by a village pond at sunset, she slowly blinks and looks down at the photo frame, a tear rolls down her cheek, her braids and red ribbons sway gently in the evening breeze, water ripples and golden sunlight shimmers on the pond, lotus flowers sway slightly, smooth gentle cinematic motion, 2D storybook illustration style", "w": 832, "h": 480, "frames": 73, "steps": 30}
-]}
+{
+ "clips": [
+  {
+   "id": "m02",
+   "image": "images/p02.png",
+   "prompt": "a sad little Indian girl sitting by a village pond at sunset, she slowly blinks and looks down at the photo frame, a tear rolls down her cheek, her braids and red ribbons sway gently in the evening breeze, water ripples and golden sunlight shimmers on the pond, lotus flowers sway slightly, smooth gentle cinematic motion, 2D storybook illustration style",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 25
+  }
+ ]
+}
