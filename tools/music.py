@@ -87,8 +87,19 @@ def sfx(name):
         out = np.zeros(n(1.2))
         for j, st in enumerate([0, 2, 4, 5, 7]): add(out, .15 * tone(hz(st, 1), .3, harm=(1, 2), amps=(1, .3), a=.002, r=.12), j * .09)
         return out
+    if name == "anklet":  # payal: three soft chhan-chhan jingles
+        out = np.zeros(n(2.4)); r = np.random.default_rng(7)
+        for j in range(3):
+            for q in range(7): bell(out, j * .62 + q * .018 + r.random() * .01, .035, 3200 + r.random() * 1600)
+        return out
     raise ValueError(name)
+def drone(buf, t0, t1, vol=.06):  # dark low hum that slowly swells and fades
+    m = int(t0 * SR); n_ = int((t1 - t0) * SR); t = np.arange(n_) / SR
+    y = vol * (np.sin(2 * np.pi * SA / 4 * t) + .5 * np.sin(2 * np.pi * SA / 4 * 1.5 * t + .3) + .3 * np.sin(2 * np.pi * SA / 4 * 1.06 * t))
+    y *= (.6 + .4 * np.sin(2 * np.pi * t / 7)) * np.minimum(1, t / 2) * np.minimum(1, (t1 - t0 - t) / 2 + .01)
+    buf[m:m + n_] += y[:len(buf) - m]
 MOODS = {
+    "mystery":lambda b, a, z, s: (drone(b, a, z, .07), [bell(b, t, .035, 466) for t in np.arange(a + 2, z, 9)]),
     "soft":   lambda b, a, z, s: (tanpura(b, a, z, .07), flute(b, a + 1, z, 64, .05, 2, s, .55)),
     "royal":  lambda b, a, z, s: (tanpura(b, a, z, .07), flute(b, a, z, 84, .06, 2, s, .8), tabla(b, a, z, 84, .10)),
     "divine": lambda b, a, z, s: (tanpura(b, a, z, .10), flute(b, a + 2, z, 52, .05, 2, s, .5), [bell(b, t, .05, 587) for t in np.arange(a + 1, z, 7)]),
