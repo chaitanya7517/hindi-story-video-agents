@@ -1,0 +1,54 @@
+{
+ "style": "FLUX storybook pictures + Ken Burns + motion clips",
+ "narrator_voice": "Dadi",
+ "characters": [
+  {
+   "name": "Dadi",
+   "hindi_name": "दादी",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/dadi.wav",
+   "ref_text": "त्योहार आने वाला था और उसके पापा दिन-रात मिट्टी के दीये बना रहे थे। पापा बहुत थक गए थे।",
+   "look": "a kind 70-year-old Indian grandmother with white hair in a bun, round gold glasses, cream cotton saree with a maroon border"
+  },
+  {
+   "name": "Monu",
+   "hindi_name": "मोनू",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/monu.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!",
+   "look": "Monu, a 10-year-old Indian boy with short messy black hair, yellow half-sleeve t-shirt, blue shorts"
+  },
+  {
+   "name": "Pari",
+   "hindi_name": "परी",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/pari.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!",
+   "look": "Pari, a 9-year-old Indian girl with two ponytails tied with pink ribbons, pink frock with white polka dots"
+  },
+  {
+   "name": "Chintu",
+   "hindi_name": "चिंटू",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/golu.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!",
+   "look": "Chintu, a chubby 7-year-old Indian boy with round black glasses, red and white striped t-shirt, brown shorts"
+  },
+  {
+   "name": "Gauri",
+   "hindi_name": "गौरी",
+   "voice": "f5",
+   "ref": "projects/ganesh-dadi/voices/meena.wav",
+   "ref_text": "यह छोटा दीया मेरे पापा की मदद करेगा। इसमें मेरा बहुत सारा प्यार है!",
+   "look": "Gauri, a thin 10-year-old poor Indian village girl with long untidy black hair, faded torn green ghagra and blouse, silver anklets, barefoot"
+  },
+  {
+   "name": "Amma",
+   "hindi_name": "गौरी की माँ",
+   "voice": "f5",
+   "ref": "projects/kuber-ganesh/voices/parvati.wav",
+   "ref_text": "गणेश, मेरे प्यारे बेटे। जो भी काम करो, मन में प्रेम रखकर करना। यही सबसे बड़ी पूजा है।",
+   "look": "Gauri's mother, a thin sick Indian village woman about 35, faded blue cotton saree, lying weakly on a rope cot"
+  }
+ ]
+}

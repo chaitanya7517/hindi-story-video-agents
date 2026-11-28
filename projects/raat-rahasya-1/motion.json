@@ -1,0 +1,85 @@
+{
+ "clips": [
+  {
+   "id": "m01",
+   "image": "images/p01.png",
+   "prompt": "the two children slowly turn their heads in fear, the mosquito net sways in the night breeze, moonlight flickers, smooth gentle motion, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  },
+  {
+   "id": "m02",
+   "image": "images/p02.png",
+   "prompt": "mist drifts slowly between the mango trees, leaves sway, the faint figure moves slightly, eerie gentle motion, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  },
+  {
+   "id": "m09",
+   "image": "images/p09.png",
+   "prompt": "the mosquito nets sway gently in the night breeze, the lantern flame flickers, stars twinkle, calm smooth motion, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  },
+  {
+   "id": "m12",
+   "image": "images/p12.png",
+   "prompt": "the girl's eyes open wide in fear, she slowly sits up and holds her blanket tight, the mosquito net moves gently, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  },
+  {
+   "id": "m20",
+   "image": "images/p20.png",
+   "prompt": "the children peep slowly from behind the tree, leaves rustle in the wind, mist drifts, the torch light trembles, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  },
+  {
+   "id": "m21",
+   "image": "images/p21.png",
+   "prompt": "the girl slowly bends and picks up a mango, her long hair moves in the wind, the clay lamp flame flickers, silver anklets shine, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  },
+  {
+   "id": "m23",
+   "image": "images/p23.png",
+   "prompt": "the girl turns around in shock, mangoes fall from her bag, her eyes fill with fear, the lamp flame shakes, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  },
+  {
+   "id": "m25",
+   "image": "images/p25.png",
+   "prompt": "a tear rolls down the girl's cheek, she hugs the cloth bag, her hair moves softly in the night breeze, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  },
+  {
+   "id": "m32",
+   "image": "images/p32.png",
+   "prompt": "the two girls hug happily, the sunlight shines, their hair moves gently, joyful smooth motion, 2D storybook illustration style, smooth cinematic motion",
+   "w": 768,
+   "h": 448,
+   "frames": 49,
+   "steps": 22
+  }
+ ]
+}

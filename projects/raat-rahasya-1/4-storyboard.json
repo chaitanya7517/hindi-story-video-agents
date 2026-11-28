@@ -1,0 +1,548 @@
+{
+ "shots": [
+  {
+   "id": "s01",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "image": "p01",
+   "clip": "m01",
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "आधी रात थी। पूरा गाँव गहरी नींद में सो रहा था।"
+    },
+    {
+     "speaker": "Pari",
+     "text": "मोनू भैया! सुनो… यह छन-छन की आवाज़ कहाँ से आ रही है?"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "scene": 1,
+   "location": "village",
+   "set": "village",
+   "image": "p02",
+   "clip": "m02",
+   "lines": [
+    {
+     "speaker": "Monu",
+     "text": "बाग़ में… बाग़ में कोई है! किसी की पायल बज रही है!"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "scene": 2,
+   "location": "village",
+   "set": "village",
+   "image": "p03",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "यह कहानी शुरू होती है गर्मियों की छुट्टियों से। मोनू, परी और छोटा चिंटू, दादी के गाँव रामपुर आए थे।"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "scene": 2,
+   "location": "village",
+   "set": "village",
+   "image": "p04",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "आ गए मेरे बच्चे! चलो, हाथ-मुँह धो लो। आज मैंने तुम्हारे लिए आम पन्ना बनाया है।"
+    },
+    {
+     "speaker": "Chintu",
+     "text": "दादी, मुझे दो गिलास चाहिए!"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "scene": 2,
+   "location": "village",
+   "set": "village",
+   "image": "p05",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "दिन भर बच्चों ने खूब मस्ती की। कभी कंचे खेले, कभी नहर में पैर डालकर बैठे।"
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "scene": 2,
+   "location": "village",
+   "set": "village",
+   "image": "p06",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Pari",
+     "text": "भैया, देखो! इतने सारे आम! यह बाग़ किसका है?"
+    },
+    {
+     "speaker": "Monu",
+     "text": "दादी कहती हैं, यह हमारे परदादा जी का बाग़ है।"
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "scene": 2,
+   "location": "village",
+   "set": "village",
+   "image": "p07",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "बाग़ के चौकीदार, रामू काका, ने बच्चों को रोका।"
+    },
+    {
+     "speaker": "Dadi",
+     "text": "बच्चों, शाम के बाद इस बाग़ में मत आना। लोग कहते हैं, यहाँ रात को कोई घूमता है।"
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "scene": 2,
+   "location": "village",
+   "set": "village",
+   "image": "p08",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Chintu",
+     "text": "द… दीदी, कौन घूमता है? भूत?"
+    },
+    {
+     "speaker": "Pari",
+     "text": "डरपोक! भूत-वूत कुछ नहीं होते।"
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "scene": 3,
+   "location": "village",
+   "set": "village",
+   "image": "p09",
+   "clip": "m09",
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "रात को सब छत पर सोए। ठंडी हवा चल रही थी, और आसमान तारों से भरा था।"
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "scene": 3,
+   "location": "village",
+   "set": "village",
+   "image": "p10",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "सो जाओ बच्चों। कल सुबह जल्दी उठकर खेत चलेंगे।"
+    },
+    {
+     "speaker": "Monu",
+     "text": "ठीक है दादी। शुभ रात्रि!"
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "scene": 3,
+   "location": "village",
+   "set": "village",
+   "image": "p11",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "पर आधी रात को…"
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "scene": 3,
+   "location": "village",
+   "set": "village",
+   "image": "p12",
+   "clip": "m12",
+   "lines": [
+    {
+     "speaker": "Pari",
+     "text": "छन… छन… छन… फिर वही आवाज़! मोनू भैया, उठो!"
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "scene": 3,
+   "location": "village",
+   "set": "village",
+   "image": "p13",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Monu",
+     "text": "क्या हुआ परी? सोने दो ना…"
+    },
+    {
+     "speaker": "Pari",
+     "text": "बाग़ की तरफ़ देखो! वहाँ कुछ चमक रहा है!"
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "scene": 3,
+   "location": "village",
+   "set": "village",
+   "image": "p14",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Monu",
+     "text": "सच में! कोई दीया लेकर घूम रहा है। और यह पायल की आवाज़…"
+    },
+    {
+     "speaker": "Chintu",
+     "text": "मुझे डर लग रहा है! मैं दादी के पास सोऊँगा!"
+    }
+   ]
+  },
+  {
+   "id": "s15",
+   "scene": 3,
+   "location": "village",
+   "set": "village",
+   "image": "p15",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "चिंटू ने चादर सिर तक ओढ़ ली। पर मोनू और परी की आँखों से नींद उड़ चुकी थी।"
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "scene": 4,
+   "location": "village",
+   "set": "village",
+   "image": "p16",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "अगली सुबह, दोनों चुपके से बाग़ में पहुँचे।"
+    },
+    {
+     "speaker": "Monu",
+     "text": "परी, रात को यहीं से आवाज़ आई थी।"
+    }
+   ]
+  },
+  {
+   "id": "s17",
+   "scene": 4,
+   "location": "village",
+   "set": "village",
+   "image": "p17",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Pari",
+     "text": "भैया, यहाँ देखो! छोटे-छोटे पैरों के निशान!"
+    },
+    {
+     "speaker": "Monu",
+     "text": "और यह… पायल का एक घुँघरू!"
+    }
+   ]
+  },
+  {
+   "id": "s18",
+   "scene": 4,
+   "location": "village",
+   "set": "village",
+   "image": "p18",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Pari",
+     "text": "भूत के पैर तो उल्टे होते हैं ना? ये तो सीधे हैं। मतलब यह कोई बच्चा है!"
+    },
+    {
+     "speaker": "Monu",
+     "text": "आज रात हम पता लगाकर रहेंगे।"
+    }
+   ]
+  },
+  {
+   "id": "s19",
+   "scene": 5,
+   "location": "village",
+   "set": "village",
+   "image": "p19",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "उस रात, जब सब सो गए, मोनू और परी टॉर्च लेकर चुपचाप नीचे उतरे।"
+    }
+   ]
+  },
+  {
+   "id": "s20",
+   "scene": 5,
+   "location": "village",
+   "set": "village",
+   "image": "p20",
+   "clip": "m20",
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "बाग़ में घना अँधेरा था। हवा से पत्ते सरसरा रहे थे।"
+    },
+    {
+     "speaker": "Pari",
+     "text": "श्श्श… वो देखो!"
+    }
+   ]
+  },
+  {
+   "id": "s21",
+   "scene": 5,
+   "location": "village",
+   "set": "village",
+   "image": "p21",
+   "clip": "m21",
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "पेड़ों के बीच एक दुबली-पतली लड़की, एक हाथ में दीया लिए, नीचे गिरे आम चुन रही थी।"
+    }
+   ]
+  },
+  {
+   "id": "s22",
+   "scene": 5,
+   "location": "village",
+   "set": "village",
+   "image": "p22",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Monu",
+     "text": "रुको! कौन हो तुम?"
+    }
+   ]
+  },
+  {
+   "id": "s23",
+   "scene": 5,
+   "location": "village",
+   "set": "village",
+   "image": "p23",
+   "clip": "m23",
+   "lines": [
+    {
+     "speaker": "Gauri",
+     "text": "म… माफ़ कर दो! मैंने चोरी नहीं की! मैं तो बस नीचे गिरे आम उठा रही थी!"
+    }
+   ]
+  },
+  {
+   "id": "s24",
+   "scene": 6,
+   "location": "village",
+   "set": "village",
+   "image": "p24",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Pari",
+     "text": "डरो मत। हम तुम्हें कुछ नहीं कहेंगे। तुम्हारा नाम क्या है?"
+    },
+    {
+     "speaker": "Gauri",
+     "text": "गौरी। मैं बगल वाले गाँव से आती हूँ।"
+    }
+   ]
+  },
+  {
+   "id": "s25",
+   "scene": 6,
+   "location": "village",
+   "set": "village",
+   "image": "p25",
+   "clip": "m25",
+   "lines": [
+    {
+     "speaker": "Gauri",
+     "text": "मेरी माँ बहुत बीमार है। घर में खाने को कुछ नहीं है। दिन में आने से शर्म आती है, इसलिए रात को आती हूँ।"
+    }
+   ]
+  },
+  {
+   "id": "s26",
+   "scene": 6,
+   "location": "village",
+   "set": "village",
+   "image": "p26",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "मोनू और परी की आँखें भर आईं। जिसे वे भूत समझ रहे थे, वह तो एक बहादुर, मेहनती बच्ची थी।"
+    }
+   ]
+  },
+  {
+   "id": "s27",
+   "scene": 6,
+   "location": "village",
+   "set": "village",
+   "image": "p27",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Monu",
+     "text": "गौरी, कल सुबह हमारे घर आना। हमारी दादी बहुत अच्छी हैं।"
+    }
+   ]
+  },
+  {
+   "id": "s28",
+   "scene": 7,
+   "location": "village",
+   "set": "village",
+   "image": "p28",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "सुबह बच्चों ने दादी को सब बता दिया।"
+    },
+    {
+     "speaker": "Pari",
+     "text": "दादी, गौरी की माँ बीमार है। हम उनकी मदद करें ना?"
+    }
+   ]
+  },
+  {
+   "id": "s29",
+   "scene": 7,
+   "location": "village",
+   "set": "village",
+   "image": "p29",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "शाबाश मेरे बच्चों! तुमने डर के आगे सच ढूँढा, और सच के आगे दया दिखाई।"
+    }
+   ]
+  },
+  {
+   "id": "s30",
+   "scene": 7,
+   "location": "village",
+   "set": "village",
+   "image": "p30",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "दादी बच्चों के साथ गौरी के घर गईं। साथ में अनाज, फल और दवाई ले गईं।"
+    }
+   ]
+  },
+  {
+   "id": "s31",
+   "scene": 7,
+   "location": "village",
+   "set": "village",
+   "image": "p31",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Amma",
+     "text": "आप लोग देवता बनकर आए हैं, अम्मा जी।"
+    },
+    {
+     "speaker": "Dadi",
+     "text": "नहीं बहन, हम सब एक-दूसरे का सहारा हैं। अब आप जल्दी ठीक हो जाइए।"
+    }
+   ]
+  },
+  {
+   "id": "s32",
+   "scene": 7,
+   "location": "village",
+   "set": "village",
+   "image": "p32",
+   "clip": "m32",
+   "lines": [
+    {
+     "speaker": "Gauri",
+     "text": "धन्यवाद नहीं बोलूँगी… आज से तुम मेरी पक्की सहेली हो!"
+    }
+   ]
+  },
+  {
+   "id": "s33",
+   "scene": 8,
+   "location": "village",
+   "set": "village",
+   "image": "p33",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "उस दिन के बाद, गौरी रोज़ दिन में बाग़ आने लगी। अब आम सबके साथ बँटते थे।"
+    },
+    {
+     "speaker": "Chintu",
+     "text": "और अब रात को कोई पायल नहीं बजेगी! मैं आराम से सोऊँगा!"
+    }
+   ]
+  },
+  {
+   "id": "s34",
+   "scene": 8,
+   "location": "village",
+   "set": "village",
+   "image": "p34",
+   "clip": null,
+   "lines": [
+    {
+     "speaker": "Dadi",
+     "text": "बच्चों, याद रखना, हर डर के पीछे कोई सच छिपा होता है। और हर ज़रूरतमंद के पीछे एक कहानी।"
+    },
+    {
+     "speaker": "Dadi",
+     "text": "अगली रात, एक और रहस्य… पुराने कुएँ से किसकी आवाज़ आई? मिलते हैं अगली कहानी में!"
+    }
+   ]
+  }
+ ]
+}

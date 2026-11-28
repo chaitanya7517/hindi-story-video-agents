@@ -1,0 +1,184 @@
+{
+ "model": "flux",
+ "style": "detailed colorful Indian cartoon storybook illustration, 2D digital painting, expressive emotional faces, rich village details, clean lines, high quality",
+ "characters": {
+  "Dadi": "a kind 70-year-old Indian grandmother with white hair in a bun, round gold glasses, cream cotton saree with a maroon border",
+  "Monu": "Monu, a 10-year-old Indian boy with short messy black hair, yellow half-sleeve t-shirt, blue shorts",
+  "Pari": "Pari, a 9-year-old Indian girl with two ponytails tied with pink ribbons, pink frock with white polka dots",
+  "Chintu": "Chintu, a chubby 7-year-old Indian boy with round black glasses, red and white striped t-shirt, brown shorts",
+  "Gauri": "Gauri, a thin 10-year-old poor Indian village girl with long untidy black hair, faded torn green ghagra and blouse, silver anklets, barefoot",
+  "Amma": "Gauri's mother, a thin sick Indian village woman about 35, faded blue cotton saree, lying weakly on a rope cot"
+ },
+ "images": [
+  {
+   "id": "p01",
+   "prompt": "{Pari} and {Monu} sitting up in fear on a rope cot under a white mosquito net on a village rooftop at midnight, staring towards a dark mango orchard, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 100
+  },
+  {
+   "id": "p02",
+   "prompt": "a dark mango orchard at midnight with tall trees, mist on the ground and a faint glowing silhouette of a small girl between the trees, mysterious, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 101
+  },
+  {
+   "id": "p03",
+   "prompt": "a colourful village bus stop on a dusty road in summer, {Monu}, {Pari} and {Chintu} jumping happily off an old bus with small bags, green fields and mango trees behind",
+   "seed": 102
+  },
+  {
+   "id": "p04",
+   "prompt": "{Dadi} standing at the door of a big old village house with a tiled roof, arms open wide, smiling warmly, sunny summer afternoon",
+   "seed": 103
+  },
+  {
+   "id": "p05",
+   "prompt": "{Chintu} drinking a big glass of green mango drink in a village courtyard, eyes closed with joy, a clay pot and brass glasses nearby, sunny",
+   "seed": 104
+  },
+  {
+   "id": "p06",
+   "prompt": "{Monu} and {Pari} running happily through a big green mango orchard full of ripe yellow mangoes, sunny afternoon, birds flying",
+   "seed": 105
+  },
+  {
+   "id": "p07",
+   "prompt": "a strict old Indian village watchman with a white mustache, white turban and a long bamboo stick, standing under a mango tree, warning with a raised finger, sunny",
+   "seed": 106
+  },
+  {
+   "id": "p08",
+   "prompt": "{Chintu} hiding behind {Pari} in fear in a mango orchard, both looking scared, golden evening light",
+   "seed": 107
+  },
+  {
+   "id": "p09",
+   "prompt": "a village rooftop at night with three rope cots under white mosquito nets, a clay water pot, a glowing lantern, {Dadi} sitting on one cot telling a story, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 108
+  },
+  {
+   "id": "p10",
+   "prompt": "{Dadi} smiling and telling a story to children at night on a village rooftop, lantern light on her face, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 109
+  },
+  {
+   "id": "p11",
+   "prompt": "a full moon behind a tall mango tree at midnight, a lonely village road, a dog lifting its head, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 110
+  },
+  {
+   "id": "p12",
+   "prompt": "{Pari} waking up suddenly under a mosquito net at midnight, eyes wide open with fear, holding her blanket, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 111
+  },
+  {
+   "id": "p13",
+   "prompt": "{Monu} rubbing his sleepy eyes on a cot under a mosquito net at night, looking confused, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 112
+  },
+  {
+   "id": "p14",
+   "prompt": "view from a village rooftop at night towards a mango orchard, a small moving light like a tiny lamp between the trees, mysterious mist, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 113
+  },
+  {
+   "id": "p15",
+   "prompt": "{Chintu} pulling the blanket over his head on a cot at night, only his round glasses peeping out, funny scared expression, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 114
+  },
+  {
+   "id": "p16",
+   "prompt": "{Monu} and {Pari} walking into a mango orchard in the early morning sunlight, looking around curiously, fallen leaves on the ground",
+   "seed": 115
+  },
+  {
+   "id": "p17",
+   "prompt": "close-up of small bare footprints in the soft mud under a mango tree, a few fallen mangoes and a tiny silver anklet bell lying on the ground, morning light",
+   "seed": 116
+  },
+  {
+   "id": "p18",
+   "prompt": "{Pari} holding a tiny silver anklet bell in her palm and looking at it thoughtfully, mango orchard in morning sunlight",
+   "seed": 117
+  },
+  {
+   "id": "p19",
+   "prompt": "{Monu} and {Pari} tiptoeing down the stairs of a village house at midnight holding a small torch, finger on lips, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 118
+  },
+  {
+   "id": "p20",
+   "prompt": "{Monu} and {Pari} hiding behind a thick mango tree trunk at night, peeping out with a torch, scared but brave, mist, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 119
+  },
+  {
+   "id": "p21",
+   "prompt": "a thin girl seen from behind in the moonlit mango orchard, long untidy black hair, faded torn green ghagra, silver anklets, picking up fallen mangoes into a cloth bag, holding a small clay lamp, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 120
+  },
+  {
+   "id": "p22",
+   "prompt": "{Monu} shining a torch and stepping out from behind a tree at night, calling out bravely, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 121
+  },
+  {
+   "id": "p23",
+   "prompt": "{Gauri} turning around in shock in a moonlit mango orchard, mangoes falling from her cloth bag, holding a small clay lamp, scared eyes, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 122
+  },
+  {
+   "id": "p24",
+   "prompt": "{Pari} kneeling kindly next to {Gauri} who is crying in a moonlit mango orchard, Pari holding Gauri's hand, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 123
+  },
+  {
+   "id": "p25",
+   "prompt": "{Gauri} crying and talking with tears in her eyes in the moonlit orchard, holding a cloth bag of mangoes to her chest, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 124
+  },
+  {
+   "id": "p26",
+   "prompt": "{Monu} and {Pari} looking at each other with sad, emotional faces in a moonlit orchard, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 125
+  },
+  {
+   "id": "p27",
+   "prompt": "{Monu} taking off his own torch and handing it to {Gauri} in a moonlit mango orchard, kind smile, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 126
+  },
+  {
+   "id": "p28",
+   "prompt": "{Dadi} listening seriously while {Pari} tells her something in a sunny village courtyard in the morning",
+   "seed": 127
+  },
+  {
+   "id": "p29",
+   "prompt": "{Dadi} smiling proudly and patting {Monu} on the head in a sunny village courtyard",
+   "seed": 128
+  },
+  {
+   "id": "p30",
+   "prompt": "{Dadi}, {Monu} and {Pari} walking on a village path carrying a basket of fruits, vegetables and a bag of rice, sunny morning",
+   "seed": 129
+  },
+  {
+   "id": "p31",
+   "prompt": "{Amma} lying on a rope cot inside a poor mud hut, {Dadi} sitting beside her giving medicine in a small spoon, soft morning light from a small window",
+   "seed": 130
+  },
+  {
+   "id": "p32",
+   "prompt": "{Gauri} smiling with happy tears, hugging {Pari} outside a small mud hut, sunny morning",
+   "seed": 131
+  },
+  {
+   "id": "p33",
+   "prompt": "{Monu}, {Pari} and {Chintu} with {Gauri} sitting on a branch and under a mango tree eating mangoes together, laughing, golden evening",
+   "seed": 132
+  },
+  {
+   "id": "p34",
+   "prompt": "{Dadi} smiling at night on the rooftop with a lantern, looking at the camera warmly, stars behind, night scene, bright full moon, deep blue moonlight, warm lantern glow",
+   "seed": 133
+  }
+ ]
+}
